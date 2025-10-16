@@ -28,45 +28,89 @@ class _MainCardState extends State<MainCard> {
       padding: const EdgeInsets.symmetric(horizontal: 10.0),
       child: Card.outlined(
         color: Theme.of(context).cardColor,
-        elevation: 0.0,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
+          side: const BorderSide(color: Colors.grey, width: 1.0),
+          borderRadius: BorderRadius.circular(15),
         ), // fixed: valid border
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: GestureDetector(
-            onTap: widget.onTap,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 5.0),
-                  child: Icon(widget.icon),
-                ),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 20.0,
-                      vertical: 5.0,
+          child: Column(
+            children: [
+              GestureDetector(
+                onTap: widget.onTap,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 5.0),
+                      child: Icon(widget.icon),
                     ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          widget.leadingLabel,
-                          style: leadingTextStyle(context),
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 20.0,
+                          vertical: 5.0,
                         ),
-                        const SizedBox(height: 4.0),
-                        if (widget.subLabel.isNotEmpty)
-                          Text(widget.subLabel, style: subTextStyle(context)),
-                      ],
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              widget.leadingLabel,
+                              style: leadingTextStyle(context),
+                            ),
+                            const SizedBox(height: 4.0),
+                            if (widget.subLabel.isNotEmpty)
+                              Text(
+                                widget.subLabel,
+                                style: subTextStyle(context),
+                              ),
+                          ],
+                        ),
+                      ),
                     ),
-                  ),
+                    if (widget.end != null) widget.end!,
+                  ],
                 ),
-                if (widget.end != null) widget.end!,
-              ],
-            ),
+              ),
+              ExpansionTile(
+                shape: const RoundedRectangleBorder(
+                  side: BorderSide(color: Colors.transparent),
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                ),
+                title: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 5.0),
+                      child: Icon(widget.icon),
+                    ),
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 20.0,
+                          vertical: 5.0,
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              widget.leadingLabel,
+                              style: leadingTextStyle(context),
+                            ),
+                            const SizedBox(height: 4.0),
+                            if (widget.subLabel.isNotEmpty)
+                              Text(
+                                widget.subLabel,
+                                style: subTextStyle(context),
+                              ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
         ),
       ),

@@ -38,6 +38,8 @@ class _HomePageState extends State<HomePage> {
         ? selectedTime!.format(context)
         : 'No time selected';
     // final Platform i;
+    late bool card1Expanded = true;
+    late bool card2Expanded = true;
 
     return Scaffold(
       appBar: AppBar(
@@ -84,8 +86,11 @@ class _HomePageState extends State<HomePage> {
               subLabel: 'Activé',
               icon: CupertinoIcons.alarm,
               onTap: _showTimePicker,
-              end: Icon(Ionicons.chevron_down),
+              end: Icon(
+                card2Expanded ? Ionicons.chevron_down : Ionicons.chevron_up,
+              ),
             ),
+            Card(child: ExpansionTile(title: Text('Reveil'))),
           ],
         ),
       ),
