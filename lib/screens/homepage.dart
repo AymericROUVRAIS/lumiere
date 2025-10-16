@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:lumiere/components/custom_time_picker.dart'; // import your custom time picker
+import 'package:lumiere/components/custom_time_picker.dart';
+import 'package:flutter_speed_dial/flutter_speed_dial.dart';
+import 'package:lumiere/components/main_card.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:lumiere/components/toggle_switch.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -33,11 +37,11 @@ class _HomePageState extends State<HomePage> {
     final displayTime = selectedTime != null
         ? selectedTime!.format(context)
         : 'No time selected';
-    final Platform.i
+    // final Platform i;
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Lampe de chevet'),
+        title: const Text('Lumière'),
         centerTitle: true,
         actions: [
           IconButton(
@@ -48,18 +52,39 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
+      floatingActionButton: SpeedDial(
+        animatedIcon: AnimatedIcons.menu_close,
+        overlayOpacity: 0.4,
+        spacing: 10,
+        spaceBetweenChildren: 8,
+        childrenButtonSize: const Size(100, 50),
+        direction: SpeedDialDirection.up,
+
+        children: [
+          SpeedDialChild(
+            child: Row(children: [const Icon(Icons.add), Text('Ajouter')]),
+            onTap: () {},
+          ),
+          SpeedDialChild(child: const Icon(Icons.edit), onTap: () {}),
+        ],
+      ),
       body: Center(
         child: Column(
-          mainAxisSize: MainAxisSize.min,
           children: [
-            Text(
-              'Selected Time: $displayTime',
-              style: const TextStyle(fontSize: 18),
+            const SizedBox(height: 15.0),
+            MainCard(
+              icon: Icons.light_mode_outlined,
+              onTap: () {},
+              leadingLabel: 'Allumer/Eteindre',
+              subLabel: 'Lampe de chevet',
+              end: SwitchExample(),
             ),
-            const SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: _showTimePicker,
-              child: const Text('Select Time'),
+            MainCard(
+              leadingLabel: 'Reveil',
+              subLabel: 'Activé',
+              icon: CupertinoIcons.alarm,
+              onTap: _showTimePicker,
+              end: Icon(Ionicons.chevron_down),
             ),
           ],
         ),

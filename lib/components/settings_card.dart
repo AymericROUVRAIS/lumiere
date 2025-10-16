@@ -23,6 +23,8 @@ class SettingsCard extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 10.0),
       child: Card(
         color: Theme.of(context).cardColor,
+        elevation: 0.0,
+        margin: EdgeInsets.zero,
         shape: Border(), // square border
         child: Padding(
           padding: const EdgeInsets.all(8.0),

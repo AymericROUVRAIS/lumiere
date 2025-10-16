@@ -1,7 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:lumiere/theme/theme.dart';
 
 class MainCard extends StatefulWidget {
-  const MainCard({super.key});
+  final IconData icon;
+  final Widget? end;
+  final VoidCallback onTap;
+  final String leadingLabel;
+  final String subLabel;
+
+  const MainCard({
+    super.key,
+    required this.icon,
+    required this.onTap,
+    required this.leadingLabel,
+    required this.subLabel,
+    this.end,
+  });
 
   @override
   State<MainCard> createState() => _MainCardState();
@@ -10,6 +24,52 @@ class MainCard extends StatefulWidget {
 class _MainCardState extends State<MainCard> {
   @override
   Widget build(BuildContext context) {
-    return Card();
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10.0),
+      child: Card.outlined(
+        color: Theme.of(context).cardColor,
+        elevation: 0.0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+        ), // fixed: valid border
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: GestureDetector(
+            onTap: widget.onTap,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 5.0),
+                  child: Icon(widget.icon),
+                ),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 20.0,
+                      vertical: 5.0,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          widget.leadingLabel,
+                          style: leadingTextStyle(context),
+                        ),
+                        const SizedBox(height: 4.0),
+                        if (widget.subLabel.isNotEmpty)
+                          Text(widget.subLabel, style: subTextStyle(context)),
+                      ],
+                    ),
+                  ),
+                ),
+                if (widget.end != null) widget.end!,
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }

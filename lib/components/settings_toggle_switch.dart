@@ -3,14 +3,14 @@ import 'package:toggle_switch/toggle_switch.dart';
 import 'package:lumiere/theme/theme_provider.dart';
 import 'package:provider/provider.dart';
 
-class CustomToggleSwitch extends StatefulWidget {
-  const CustomToggleSwitch({super.key});
+class SettingsToggleSwitch extends StatefulWidget {
+  const SettingsToggleSwitch({super.key});
 
   @override
-  State<CustomToggleSwitch> createState() => _CustomToggleSwitchState();
+  State<SettingsToggleSwitch> createState() => _SettingsToggleSwitchState();
 }
 
-class _CustomToggleSwitchState extends State<CustomToggleSwitch> {
+class _SettingsToggleSwitchState extends State<SettingsToggleSwitch> {
   late int _selectedIndex;
 
   @override

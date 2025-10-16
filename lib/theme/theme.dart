@@ -10,8 +10,8 @@ final ThemeData lightMode = ThemeData(
   ),
   scaffoldBackgroundColor: const Color(0xFFEAF3FA), // Soft blue
   appBarTheme: const AppBarTheme(
-    backgroundColor: Color(0xFF458cf2), // Blue
-    foregroundColor: Colors.white,
+    backgroundColor: Color(0xFFEAF3FA), // Blue Color(0xFF458cf2)
+    foregroundColor: Colors.black,
     elevation: 1,
   ),
   textButtonTheme: TextButtonThemeData(

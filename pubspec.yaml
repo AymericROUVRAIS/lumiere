@@ -13,9 +13,11 @@ dependencies:
   ionicons: ^0.2.2
   toggle_switch: ^2.3.0
   cupertino_icons: ^1.0.8
+  flutter_speed_dial: ^7.0.0
   font_awesome_flutter: ^10.8.0
   flutter_launcher_icons: ^0.14.4
   flutter_time_picker_spinner: ^2.0.0
+
 
 
 dev_dependencies:
