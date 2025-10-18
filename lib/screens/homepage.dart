@@ -6,7 +6,8 @@ import 'package:flutter_speed_dial/flutter_speed_dial.dart'; // better fab
 // Custom widgets for the project
 import 'package:lumiere/components/main_card.dart';
 import 'package:lumiere/components/toggle_switch.dart';
-import 'package:lumiere/components/custom_time_picker.dart';
+import 'package:lumiere/functions/show_time_picker.dart';
+import 'package:lumiere/functions/alarm_dialog.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -16,23 +17,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  TimeOfDay? selectedTime;
-
-  void _showTimePicker() async {
-    showDialog(
-      context: context,
-      builder: (context) {
-        return CustomTimePicker(
-          initialTime: selectedTime ?? TimeOfDay.now(),
-          onTimeSelected: (time) {
-            setState(() {
-              selectedTime = time;
-            });
-          },
-        );
-      },
-    );
-  }
+  TimeOfDay? selectedTime; // time selected to create alarm
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +27,7 @@ class _HomePageState extends State<HomePage> {
     // final Platform i;
     // late bool card1Expanded = true;
     // late bool card2Expanded = true;
-    late double lightValue = 0;
+    late double lightValue = 50;
 
     late List<ListTile> lightStateChild = [
       ListTile(
@@ -53,7 +38,7 @@ class _HomePageState extends State<HomePage> {
               Theme.of(context).sliderTheme.activeTrackColor ??
               Theme.of(context).colorScheme.primary,
           color:
-              Theme.of(context).sliderTheme.inactiveTrackColor ??
+              Theme.of(context).sliderTheme.activeTrackColor ??
               Theme.of(context).colorScheme.secondary,
         ),
       ),
@@ -62,8 +47,7 @@ class _HomePageState extends State<HomePage> {
           data: SliderTheme.of(context).copyWith(
             trackHeight: 20, // Makes the bar thicker
             thumbColor: Colors.blue,
-            overlayColor: Colors.blue.withAlpha(32), // Optional
-            trackShape: RectangularSliderTrackShape(),
+            trackShape: RoundedRectSliderTrackShape(),
           ),
           child: Slider(
             min: 0,
@@ -108,13 +92,21 @@ class _HomePageState extends State<HomePage> {
               child: const Icon(Icons.add),
               label: 'Ajouter',
               onTap: () {
-                _showTimePicker();
+                showCustomTimePicker(
+                  context: context,
+                  initialTime: selectedTime,
+                  onTimeSelected: (time) {
+                    setState(() {
+                      selectedTime = time;
+                    });
+                  },
+                );
               },
             ),
             SpeedDialChild(
               child: const Icon(Icons.edit),
               label: 'Modifier',
-              onTap: () {},
+              onTap: () => showCustomPopup(context),
             ),
           ],
         ),
