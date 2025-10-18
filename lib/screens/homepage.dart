@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:ionicons/ionicons.dart';
-import 'package:lumiere/components/custom_time_picker.dart';
-import 'package:flutter_speed_dial/flutter_speed_dial.dart';
+import 'package:ionicons/ionicons.dart'; // better icons
+import 'package:flutter/cupertino.dart'; // ios style
+import 'package:filling_slider/filling_slider.dart'; // ios like slider integration
+import 'package:flutter_speed_dial/flutter_speed_dial.dart'; // better fab
+// Custom widgets for the project
 import 'package:lumiere/components/main_card.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:lumiere/components/toggle_switch.dart';
+import 'package:lumiere/components/custom_time_picker.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

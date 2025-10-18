@@ -3,7 +3,6 @@ import 'package:lumiere/screens/homepage.dart';
 import 'package:lumiere/screens/bluetooth_connection.dart';
 import 'package:lumiere/screens/about.dart';
 import 'package:lumiere/screens/settings.dart';
-import 'package:lumiere/theme/theme.dart';
 import 'package:lumiere/theme/theme_provider.dart';
 import 'package:provider/provider.dart';
 
