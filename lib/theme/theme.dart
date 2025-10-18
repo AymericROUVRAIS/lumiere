@@ -55,7 +55,8 @@ final ThemeData darkMode = ThemeData(
   cardTheme: CardThemeData(color: Color(0xFF58575a)),
   sliderTheme: SliderThemeData(
     activeTrackColor: Color(0xFF468df3),
-    inactiveTrackColor: Colors.grey,
+    inactiveTrackColor: Colors.blue[50],
+    inactiveTickMarkColor: Colors.grey,
   ),
 );
 
