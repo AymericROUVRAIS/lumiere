@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 final ThemeData lightMode = ThemeData(
   brightness: Brightness.light,
   useMaterial3: true,
+  // Defining default colorscheme to cover all ground automatically
   colorScheme: ColorScheme.fromSeed(
     seedColor: Color(0xFF468df3), // Light blue
     brightness: Brightness.light,
@@ -12,7 +13,7 @@ final ThemeData lightMode = ThemeData(
   appBarTheme: const AppBarTheme(
     backgroundColor: Color(0xFFEAF3FA), // Blue Color(0xFF458cf2)
     foregroundColor: Colors.black,
-    elevation: 1,
+    elevation: 0,
   ),
   textButtonTheme: TextButtonThemeData(
     style: TextButton.styleFrom(foregroundColor: Colors.white),
@@ -23,6 +24,10 @@ final ThemeData lightMode = ThemeData(
     bodySmall: TextStyle(color: Colors.black),
   ),
   cardTheme: CardThemeData(color: Colors.blue[50]),
+  sliderTheme: SliderThemeData(
+    activeTrackColor: Color(0xFF468df3),
+    inactiveTrackColor: Colors.grey,
+  ),
 );
 
 // Dark Theme - Purple
@@ -30,7 +35,7 @@ final ThemeData darkMode = ThemeData(
   brightness: Brightness.dark,
   useMaterial3: true,
   colorScheme: ColorScheme.fromSeed(
-    seedColor: Color(0xFFBB86FC), // Blue
+    seedColor: Color(0xFFBB86FC), // Purple
     brightness: Brightness.dark,
   ),
   scaffoldBackgroundColor: const Color(0xFF121C2B), // Deep navy
@@ -48,6 +53,10 @@ final ThemeData darkMode = ThemeData(
     bodySmall: TextStyle(),
   ),
   cardTheme: CardThemeData(color: Color(0xFF58575a)),
+  sliderTheme: SliderThemeData(
+    activeTrackColor: Color(0xFF468df3),
+    inactiveTrackColor: Colors.grey,
+  ),
 );
 
 // Custom theme for widgets

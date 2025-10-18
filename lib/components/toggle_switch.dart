@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-// import 'package:lumiere/theme/theme.dart';
 
-class SwitchExample extends StatefulWidget {
-  const SwitchExample({super.key});
+class ToggleSwitch extends StatefulWidget {
+  const ToggleSwitch({super.key});
 
   @override
-  State<SwitchExample> createState() => _SwitchExampleState();
+  State<ToggleSwitch> createState() => _ToggleSwitchState();
 }
 
-class _SwitchExampleState extends State<SwitchExample> {
+class _ToggleSwitchState extends State<ToggleSwitch> {
   bool light = true;
 
   @override

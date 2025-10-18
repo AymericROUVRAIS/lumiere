@@ -38,8 +38,10 @@ class _HomePageState extends State<HomePage> {
         ? selectedTime!.format(context)
         : 'No time selected';
     // final Platform i;
-    late bool card1Expanded = true;
-    late bool card2Expanded = true;
+    // late bool card1Expanded = true;
+    // late bool card2Expanded = true;
+    late double lightValue = 0;
+
     late List<ListTile> lightStateChild = [
       ListTile(
         title: FillingSlider(
@@ -74,6 +76,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
     ]; // only a slider (filling slider)
+    late List<ListTile> alarmChild = [];
 
     return Scaffold(
       appBar: AppBar(
@@ -88,21 +91,31 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      floatingActionButton: SpeedDial(
-        animatedIcon: AnimatedIcons.menu_close,
-        overlayOpacity: 0.4,
-        spacing: 10,
-        spaceBetweenChildren: 8,
-        childrenButtonSize: const Size(100, 50),
-        direction: SpeedDialDirection.up,
+      floatingActionButton: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: SpeedDial(
+          animatedIcon: AnimatedIcons.menu_close,
+          overlayOpacity: 0.4,
+          spacing: 10,
+          spaceBetweenChildren: 8,
+          childrenButtonSize: const Size(50, 50),
+          direction: SpeedDialDirection.up,
 
-        children: [
-          SpeedDialChild(
-            child: Row(children: [const Icon(Icons.add), Text('Ajouter')]),
-            onTap: () {},
-          ),
-          SpeedDialChild(child: const Icon(Icons.edit), onTap: () {}),
-        ],
+          children: [
+            SpeedDialChild(
+              child: const Icon(Icons.add),
+              label: 'Ajouter',
+              onTap: () {
+                _showTimePicker();
+              },
+            ),
+            SpeedDialChild(
+              child: const Icon(Icons.edit),
+              label: 'Modifier',
+              onTap: () {},
+            ),
+          ],
+        ),
       ),
       body: Center(
         child: Column(
@@ -113,18 +126,16 @@ class _HomePageState extends State<HomePage> {
               onTap: () {},
               leadingLabel: 'Allumer/Eteindre',
               subLabel: 'Lampe de chevet',
-              end: SwitchExample(),
+              end: ToggleSwitch(),
+              expansionChild: lightStateChild,
             ),
             MainCard(
               leadingLabel: 'Reveil',
               subLabel: 'Activé',
               icon: CupertinoIcons.alarm,
-              onTap: _showTimePicker,
-              end: Icon(
-                card2Expanded ? Ionicons.chevron_down : Ionicons.chevron_up,
-              ),
+              onTap: () {},
+              expansionChild: alarmChild,
             ),
-            Card(child: ExpansionTile(title: Text('Reveil'))),
           ],
         ),
       ),

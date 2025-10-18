@@ -7,6 +7,7 @@ class MainCard extends StatefulWidget {
   final VoidCallback onTap;
   final String leadingLabel;
   final String subLabel;
+  final List<ListTile> expansionChild;
 
   const MainCard({
     super.key,
@@ -14,6 +15,7 @@ class MainCard extends StatefulWidget {
     required this.onTap,
     required this.leadingLabel,
     required this.subLabel,
+    required this.expansionChild,
     this.end,
   });
 
@@ -31,86 +33,19 @@ class _MainCardState extends State<MainCard> {
         shape: RoundedRectangleBorder(
           side: const BorderSide(color: Colors.grey, width: 1.0),
           borderRadius: BorderRadius.circular(15),
-        ), // fixed: valid border
+        ), // customize card border
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Column(
-            children: [
-              GestureDetector(
-                onTap: widget.onTap,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 5.0),
-                      child: Icon(widget.icon),
-                    ),
-                    Expanded(
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 20.0,
-                          vertical: 5.0,
-                        ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              widget.leadingLabel,
-                              style: leadingTextStyle(context),
-                            ),
-                            const SizedBox(height: 4.0),
-                            if (widget.subLabel.isNotEmpty)
-                              Text(
-                                widget.subLabel,
-                                style: subTextStyle(context),
-                              ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    if (widget.end != null) widget.end!,
-                  ],
-                ),
-              ),
-              ExpansionTile(
-                shape: const RoundedRectangleBorder(
-                  side: BorderSide(color: Colors.transparent),
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                ),
-                title: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 5.0),
-                      child: Icon(widget.icon),
-                    ),
-                    Expanded(
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 20.0,
-                          vertical: 5.0,
-                        ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              widget.leadingLabel,
-                              style: leadingTextStyle(context),
-                            ),
-                            const SizedBox(height: 4.0),
-                            if (widget.subLabel.isNotEmpty)
-                              Text(
-                                widget.subLabel,
-                                style: subTextStyle(context),
-                              ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
+          child: ExpansionTile(
+            title: Text(widget.leadingLabel, style: leadingTextStyle(context)),
+            subtitle: Text(widget.subLabel, style: subTextStyle(context)),
+            leading: Icon(widget.icon),
+            trailing: widget.end, // default chevron if widget.end is empty
+            shape: const RoundedRectangleBorder(
+              side: BorderSide(color: Colors.transparent),
+              borderRadius: BorderRadius.all(Radius.circular(15)),
+            ),
+            children: widget.expansionChild,
           ),
         ),
       ),
