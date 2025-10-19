@@ -7,7 +7,7 @@ Application pour contrôler une lampe connecté
 This apps aims to control adressable LED projects. The projects can be connected using bluetooth to the phone, and then allows multiple controls such as light level or color.
 The first integration of it is with a small bedside lamp, used as an alarm to wake up with a "rising sun" effect.
 
-![](main_page.png)
+<img src="main_page.png", width="400">
 
 ## Packages
 
