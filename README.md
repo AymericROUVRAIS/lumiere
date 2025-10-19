@@ -11,7 +11,7 @@ A few resources for the Flutter project:
 
 Packages used in the app:
 
-- [Flutter speed dial](https://pub.dev/packages/flutter_speed_dial), for a better floating action button
+- [Flutter speed dial](https://github.com/darioielardi/flutter_speed_dial/), for a better floating action button
 - [Ionicons](https://ionic.io/ionicons)
 
 
