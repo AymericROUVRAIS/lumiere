@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:ionicons/ionicons.dart';
 import 'package:lumiere/theme/theme.dart';
 
 class MainCard extends StatefulWidget {
   final IconData icon;
-  final Widget? end;
   final VoidCallback onTap;
   final String leadingLabel;
   final String subLabel;
@@ -16,7 +16,6 @@ class MainCard extends StatefulWidget {
     required this.leadingLabel,
     required this.subLabel,
     required this.expansionChild,
-    this.end,
   });
 
   @override
@@ -24,6 +23,14 @@ class MainCard extends StatefulWidget {
 }
 
 class _MainCardState extends State<MainCard> {
+  late bool _isEnabled; // disable the ExpansionTile if expansionChild is empty
+
+  @override
+  void initState() {
+    super.initState();
+    _isEnabled = widget.expansionChild.isNotEmpty;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -33,19 +40,27 @@ class _MainCardState extends State<MainCard> {
         shape: Theme.of(context).cardTheme.shape, // customize card border
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: ExpansionTile(
-            title: Text(widget.leadingLabel, style: leadingTextStyle(context)),
-            subtitle: Text(widget.subLabel, style: subTextStyle(context)),
-            leading: Icon(
-              widget.icon,
-              color: Theme.of(context).iconTheme.color,
+          child: AbsorbPointer(
+            absorbing: !_isEnabled,
+            child: ExpansionTile(
+              title: Text(
+                widget.leadingLabel,
+                style: leadingTextStyle(context),
+              ),
+              subtitle: Text(widget.subLabel, style: subTextStyle(context)),
+              leading: Icon(
+                widget.icon,
+                color: Theme.of(context).iconTheme.color,
+              ),
+              // Default chevron if the widget is enabled
+              trailing: !_isEnabled ? const SizedBox() : null,
+              shape: const RoundedRectangleBorder(
+                side: BorderSide(color: Colors.transparent),
+                borderRadius: BorderRadius.all(Radius.circular(15)),
+              ),
+              onExpansionChanged: _isEnabled ? (expanded) {} : null,
+              children: _isEnabled ? widget.expansionChild : [],
             ),
-            trailing: widget.end, // default chevron if widget.end is empty
-            shape: const RoundedRectangleBorder(
-              side: BorderSide(color: Colors.transparent),
-              borderRadius: BorderRadius.all(Radius.circular(15)),
-            ),
-            children: widget.expansionChild,
           ),
         ),
       ),
