@@ -28,6 +28,7 @@ final ThemeData lightMode = ThemeData(
     activeTrackColor: Color(0xFF468df3),
     inactiveTrackColor: Colors.grey,
   ),
+  iconTheme: IconThemeData(color: Color(0xFF44474e)),
 );
 
 // Dark Theme - Purple
@@ -58,6 +59,7 @@ final ThemeData darkMode = ThemeData(
     inactiveTrackColor: Colors.blue[50],
     inactiveTickMarkColor: Colors.grey,
   ),
+  iconTheme: IconThemeData(color: Color(0xFFccc4cf)),
 );
 
 // Custom theme for widgets
@@ -65,13 +67,10 @@ TextStyle leadingTextStyle(BuildContext context) {
   return TextStyle(
     color: Theme.of(context).textTheme.bodyLarge?.color,
     fontWeight: FontWeight.bold,
-    fontSize: 14,
+    fontSize: 15,
   );
 }
 
 TextStyle subTextStyle(BuildContext context) {
-  return TextStyle(
-    color: Theme.of(context).textTheme.bodySmall?.color,
-    fontSize: 10,
-  );
+  return TextStyle(color: Theme.of(context).textTheme.bodySmall?.color);
 }

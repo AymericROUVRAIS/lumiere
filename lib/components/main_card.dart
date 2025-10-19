@@ -39,7 +39,10 @@ class _MainCardState extends State<MainCard> {
           child: ExpansionTile(
             title: Text(widget.leadingLabel, style: leadingTextStyle(context)),
             subtitle: Text(widget.subLabel, style: subTextStyle(context)),
-            leading: Icon(widget.icon),
+            leading: Icon(
+              widget.icon,
+              color: Theme.of(context).iconTheme.color,
+            ),
             trailing: widget.end, // default chevron if widget.end is empty
             shape: const RoundedRectangleBorder(
               side: BorderSide(color: Colors.transparent),
