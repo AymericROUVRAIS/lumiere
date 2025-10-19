@@ -26,7 +26,7 @@ final ThemeData lightMode = ThemeData(
   cardTheme: CardThemeData(
     color: Colors.blue[50],
     shape: RoundedRectangleBorder(
-      side: const BorderSide(color: Colors.purple, width: 1.0),
+      side: BorderSide(color: Color(0xFFd6e3ff), width: 1.0),
       borderRadius: BorderRadius.circular(15),
     ),
   ),

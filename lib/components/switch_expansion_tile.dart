@@ -65,13 +65,9 @@ class SwitchControlledExpansionTileState
                   color: Colors.transparent,
                   child: Row(
                     children: [
-                      Padding(
-                        // Center Icon to Text
-                        padding: const EdgeInsets.only(top: 8.0),
-                        child: Icon(
-                          widget.icon,
-                          color: Theme.of(context).iconTheme.color,
-                        ),
+                      Icon(
+                        widget.icon,
+                        color: Theme.of(context).iconTheme.color,
                       ),
                       Expanded(
                         child: Padding(
