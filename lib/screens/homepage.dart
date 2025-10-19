@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart'; // better icons
 import 'package:flutter/cupertino.dart'; // ios style
-import 'package:filling_slider/filling_slider.dart'; // ios like slider integration
 import 'package:flutter_speed_dial/flutter_speed_dial.dart'; // better fab
 // Custom widgets for the project
 import 'package:lumiere/components/main_card.dart';
-import 'package:lumiere/components/toggle_switch.dart';
+import 'package:lumiere/components/switch_expansion_tile.dart';
 import 'package:lumiere/functions/show_time_picker.dart';
 import 'package:lumiere/functions/alarm_dialog.dart';
 
@@ -18,51 +17,14 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   TimeOfDay? selectedTime; // time selected to create alarm
+  double lightValue = 50; // light slider value
+  List<ListTile> alarmChild = [];
 
   @override
   Widget build(BuildContext context) {
-    final displayTime = selectedTime != null
-        ? selectedTime!.format(context)
-        : 'No time selected';
-    // final Platform i;
+    late bool isExpanded = false; // control expansion
     // late bool card1Expanded = true;
     // late bool card2Expanded = true;
-    late double lightValue = 50;
-
-    late List<ListTile> lightStateChild = [
-      ListTile(
-        title: FillingSlider(
-          direction: FillingSliderDirection.horizontal,
-          height: 40.0,
-          fillColor:
-              Theme.of(context).sliderTheme.activeTrackColor ??
-              Theme.of(context).colorScheme.primary,
-          color:
-              Theme.of(context).sliderTheme.activeTrackColor ??
-              Theme.of(context).colorScheme.secondary,
-        ),
-      ),
-      ListTile(
-        title: SliderTheme(
-          data: SliderTheme.of(context).copyWith(
-            trackHeight: 20, // Makes the bar thicker
-            thumbColor: Colors.blue,
-            trackShape: RoundedRectSliderTrackShape(),
-          ),
-          child: Slider(
-            min: 0,
-            max: 100,
-            value: lightValue,
-            onChanged: (value) {
-              setState(() {
-                lightValue = value;
-              });
-            },
-          ),
-        ),
-      ),
-    ]; // only a slider (filling slider)
-    late List<ListTile> alarmChild = [];
 
     return Scaffold(
       appBar: AppBar(
@@ -75,7 +37,7 @@ class _HomePageState extends State<HomePage> {
               Navigator.pushNamed(context, '/settingspage');
             },
           ),
-        ],
+        ], // Settings button
       ),
       floatingActionButton: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -115,17 +77,20 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             const SizedBox(height: 15.0),
-            MainCard(
+            SwitchControlledExpansionTile(
               icon: Icons.light_mode_outlined,
               onTap: () {},
               leadingLabel: 'Allumer/Eteindre',
               subLabel: 'Lampe de chevet',
-              end: ToggleSwitch(),
-              expansionChild: lightStateChild,
+              onSliderValueChanged: (value) {
+                setState(() {
+                  lightValue = value;
+                });
+              },
             ),
             MainCard(
               leadingLabel: 'Reveil',
-              subLabel: 'Activé',
+              subLabel: 'Desactivé',
               icon: CupertinoIcons.alarm,
               onTap: () {},
               expansionChild: alarmChild,
