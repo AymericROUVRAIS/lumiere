@@ -23,7 +23,13 @@ final ThemeData lightMode = ThemeData(
     bodyMedium: TextStyle(color: Color(0xFF1E1E2E)),
     bodySmall: TextStyle(color: Colors.black),
   ),
-  cardTheme: CardThemeData(color: Colors.blue[50]),
+  cardTheme: CardThemeData(
+    color: Colors.blue[50],
+    shape: RoundedRectangleBorder(
+      side: const BorderSide(color: Colors.purple, width: 1.0),
+      borderRadius: BorderRadius.circular(15),
+    ),
+  ),
   sliderTheme: SliderThemeData(
     activeTrackColor: Color(0xFF468df3),
     inactiveTrackColor: Colors.grey,
@@ -53,7 +59,13 @@ final ThemeData darkMode = ThemeData(
     bodyMedium: TextStyle(color: Color(0xFFEAEAEA)),
     bodySmall: TextStyle(),
   ),
-  cardTheme: CardThemeData(color: Color(0xFF58575a)),
+  cardTheme: CardThemeData(
+    color: Color(0xFF58575a),
+    shape: RoundedRectangleBorder(
+      side: const BorderSide(color: Colors.grey, width: 1.0),
+      borderRadius: BorderRadius.circular(15),
+    ),
+  ),
   sliderTheme: SliderThemeData(
     activeTrackColor: Color(0xFF468df3),
     inactiveTrackColor: Colors.blue[50],

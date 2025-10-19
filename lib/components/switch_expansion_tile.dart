@@ -46,10 +46,8 @@ class SwitchControlledExpansionTileState
       padding: const EdgeInsets.symmetric(horizontal: 10.0),
       child: Card.outlined(
         color: Theme.of(context).cardColor,
-        shape: RoundedRectangleBorder(
-          side: const BorderSide(color: Colors.grey, width: 1.0),
-          borderRadius: BorderRadius.circular(15),
-        ), // customize card border
+        shape: Theme.of(context).cardTheme.shape,
+        // customize card border
         child: Padding(
           padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 0.0),
           child: Column(
@@ -58,7 +56,12 @@ class SwitchControlledExpansionTileState
                 behavior: HitTestBehavior.opaque,
                 onTap: () {},
                 child: Container(
-                  padding: EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 0.0),
+                  padding: EdgeInsets.fromLTRB(
+                    16.0,
+                    8.0,
+                    16.0,
+                    isExpanded ? 0.0 : 8.0,
+                  ),
                   color: Colors.transparent,
                   child: Row(
                     children: [
