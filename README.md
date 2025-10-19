@@ -9,9 +9,10 @@ A few resources for the Flutter project:
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-Packages used in the app:
+Go checkout packages used in the app:
 
 - [Flutter speed dial](https://github.com/darioielardi/flutter_speed_dial/), for a better floating action button
+- [Interactive slider](https://github.com/jonas-zebari/interactive_slider)
 - [Ionicons](https://ionic.io/ionicons)
 
 
