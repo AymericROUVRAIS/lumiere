@@ -1,4 +1,4 @@
-# lumiere
+# Lumiere
 
 Application pour contrôler une lampe connecté
 
@@ -16,12 +16,17 @@ Packages used in the app:
 
 
 ## Objectives
+
 This apps aims to control adressable LED projects. The projects can be connected using bluetooth to the phone, and then allows multiple controls such as light level or color.
 The first integration of it is with a small bedside lamp, used as an alarm to wake up with a "rising sun" effect.
+
+## Branch
+
+This branch is only for the App development.
 
 ## To do
 
 The list of everything to do :
--   Bluetooth integration
--   Communication between the app and an esp32
--   Code for the esp32
+- Bluetooth integration
+- Communication between the app and an esp32
+- Different languages
