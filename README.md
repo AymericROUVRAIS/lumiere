@@ -18,6 +18,7 @@ Go checkout packages used in the app:
 
 - [Flutter speed dial](https://github.com/darioielardi/flutter_speed_dial/), for a better floating action button
 - [Interactive slider](https://github.com/jonas-zebari/interactive_slider)
+- [Toggle switch](https://github.com/PramodJoshi/toggle_switch)
 - [Ionicons](https://ionic.io/ionicons)
 
 ## Branch
