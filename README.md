@@ -10,6 +10,7 @@ The first integration of it is with a small bedside lamp, used as an alarm to wa
 Example of the main page of the app:
 
 <img src="main_page.png" width="200"/>
+<img src="main_page_dark.png" width="200"/>
 
 ## Packages
 
