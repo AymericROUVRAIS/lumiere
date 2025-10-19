@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:toggle_switch/toggle_switch.dart';
 import 'package:lumiere/theme/theme_provider.dart';
-import 'package:provider/provider.dart';
 
 class SettingsToggleSwitch extends StatefulWidget {
   const SettingsToggleSwitch({super.key});

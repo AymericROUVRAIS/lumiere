@@ -22,10 +22,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    late bool isExpanded = false; // control expansion
-    // late bool card1Expanded = true;
-    // late bool card2Expanded = true;
-
     return Scaffold(
       appBar: AppBar(
         title: const Text('Lumière'),
@@ -49,10 +45,16 @@ class _HomePageState extends State<HomePage> {
           childrenButtonSize: const Size(50, 50),
           direction: SpeedDialDirection.up,
 
+          // Modify and Add buttons
           children: [
             SpeedDialChild(
               child: const Icon(Icons.add),
               label: 'Ajouter',
+              onTap: () => showCustomPopup(context),
+            ),
+            SpeedDialChild(
+              child: const Icon(Icons.edit),
+              label: 'Modifier',
               onTap: () {
                 showCustomTimePicker(
                   context: context,
@@ -64,11 +66,6 @@ class _HomePageState extends State<HomePage> {
                   },
                 );
               },
-            ),
-            SpeedDialChild(
-              child: const Icon(Icons.edit),
-              label: 'Modifier',
-              onTap: () => showCustomPopup(context),
             ),
           ],
         ),
