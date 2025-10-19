@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:lumiere/functions/switch_theme.dart';
 
 // Light Theme - Blue
 final ThemeData lightMode = ThemeData(
   brightness: Brightness.light,
   useMaterial3: true,
-  // Defining default colorscheme to cover all ground automatically
+  // Defining default colorscheme to have preconfigured colors
   colorScheme: ColorScheme.fromSeed(
-    seedColor: Color(0xFF468df3), // Light blue
+    seedColor: const Color(0xFF468df3), // Light blue
     brightness: Brightness.light,
   ),
   scaffoldBackgroundColor: const Color(0xFFEAF3FA), // Soft blue
@@ -35,6 +36,18 @@ final ThemeData lightMode = ThemeData(
     inactiveTrackColor: Colors.grey,
   ),
   iconTheme: IconThemeData(color: Color(0xFF44474e)),
+  // Theme for custom widget
+  extensions: <ThemeExtension<dynamic>>[
+    const ToggleSwitchThemeExtension(
+      activeBgColor: Color(0xFF2c292f),
+      activeFgColor: Color(0xFFd8bafa),
+      inactiveBgColor: Colors.grey,
+      inactiveFgColor: Colors.black,
+      borderColor: Colors.blue,
+      borderWidth: 2.0,
+      cornerRadius: 8.0,
+    ),
+  ],
 );
 
 // Dark Theme - Purple
@@ -42,7 +55,7 @@ final ThemeData darkMode = ThemeData(
   brightness: Brightness.dark,
   useMaterial3: true,
   colorScheme: ColorScheme.fromSeed(
-    seedColor: Color(0xFFBB86FC), // Purple
+    seedColor: const Color(0xFFBB86FC), // Purple
     brightness: Brightness.dark,
   ),
   scaffoldBackgroundColor: const Color(0xFF121C2B), // Deep navy
@@ -67,11 +80,21 @@ final ThemeData darkMode = ThemeData(
     ),
   ),
   sliderTheme: SliderThemeData(
-    activeTrackColor: Color(0xFF468df3),
-    inactiveTrackColor: Colors.blue[50],
-    inactiveTickMarkColor: Colors.grey,
+    activeTrackColor: const Color(0xFFBB86FC),
+    inactiveTrackColor: Colors.white,
   ),
   iconTheme: IconThemeData(color: Color(0xFFccc4cf)),
+  extensions: <ThemeExtension<dynamic>>[
+    const ToggleSwitchThemeExtension(
+      activeBgColor: Color(0xFF2c292f),
+      activeFgColor: Color(0xFFd8bafa),
+      inactiveBgColor: Colors.grey,
+      inactiveFgColor: Colors.black,
+      borderColor: Colors.blue,
+      borderWidth: 2.0,
+      cornerRadius: 8.0,
+    ),
+  ],
 );
 
 // Custom theme for widgets
