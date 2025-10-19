@@ -9,6 +9,11 @@ A few resources for the Flutter project:
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
+Packages used in the app:
+
+- [Flutter speed dial](https://pub.dev/packages/flutter_speed_dial), for a better floating action button
+- [Ionicons](https://ionic.io/ionicons)
+
 
 ## Objectives
 This apps aims to control adressable LED projects. The projects can be connected using bluetooth to the phone, and then allows multiple controls such as light level or color.
