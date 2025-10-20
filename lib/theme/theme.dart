@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:lumiere/functions/card_theme.dart';
 import 'package:lumiere/functions/switch_theme.dart';
 
-// Light Theme - Blue
+// Light Theme - Blue based
 final ThemeData lightMode = ThemeData(
   brightness: Brightness.light,
   useMaterial3: true,
@@ -39,18 +40,27 @@ final ThemeData lightMode = ThemeData(
   // Theme for custom widget
   extensions: <ThemeExtension<dynamic>>[
     const ToggleSwitchThemeExtension(
-      activeBgColor: Color(0xFF2c292f),
-      activeFgColor: Color(0xFFd8bafa),
-      inactiveBgColor: Colors.grey,
-      inactiveFgColor: Colors.black,
-      borderColor: Colors.blue,
+      activeBgColor: Color(0xFFd6e3ff), // Color of selected : bg
+      activeFgColor: Colors.black, // Color of selected : text
+      inactiveBgColor:
+          Colors.transparent, // Color not selected : bg ( Color(0xFFe7e8ee) )
+      inactiveFgColor: Colors.black, // Color not selected : text
+      borderColor: Colors.grey,
       borderWidth: 2.0,
       cornerRadius: 8.0,
+    ),
+    DialogCardTheme(
+      color: Colors.transparent, // color of background
+      foregroundColor: Colors.black,
+      shape: RoundedRectangleBorder(
+        side: const BorderSide(color: Colors.grey, width: 1.0),
+        borderRadius: BorderRadius.circular(15),
+      ),
     ),
   ],
 );
 
-// Dark Theme - Purple
+// Dark Theme - Purple based
 final ThemeData darkMode = ThemeData(
   brightness: Brightness.dark,
   useMaterial3: true,
@@ -86,13 +96,23 @@ final ThemeData darkMode = ThemeData(
   iconTheme: IconThemeData(color: Color(0xFFccc4cf)),
   extensions: <ThemeExtension<dynamic>>[
     const ToggleSwitchThemeExtension(
-      activeBgColor: Color(0xFF2c292f),
-      activeFgColor: Color(0xFFd8bafa),
-      inactiveBgColor: Colors.grey,
-      inactiveFgColor: Colors.black,
-      borderColor: Colors.blue,
+      activeBgColor: Color(
+        0xFF543b72,
+      ), // Color of selected : bg Color(0xFFd8bafa)
+      activeFgColor: Colors.white, // Color of selected : Text
+      inactiveBgColor: Colors.transparent, // Color(0xFF2c292f)
+      inactiveFgColor: Colors.white,
+      borderColor: Colors.grey,
       borderWidth: 2.0,
       cornerRadius: 8.0,
+    ),
+    DialogCardTheme(
+      color: Colors.transparent,
+      foregroundColor: Colors.black,
+      shape: RoundedRectangleBorder(
+        side: const BorderSide(color: Colors.grey, width: 1.0),
+        borderRadius: BorderRadius.circular(15),
+      ),
     ),
   ],
 );
