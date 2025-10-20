@@ -20,6 +20,12 @@ class _HomePageState extends State<HomePage> {
   double lightValue = 50; // light slider value
   List<ListTile> alarmChild = [];
 
+  void addAlarm(ListTile tile) {
+    setState(() {
+      alarmChild.add(tile);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,7 +56,7 @@ class _HomePageState extends State<HomePage> {
             SpeedDialChild(
               child: const Icon(Icons.add),
               label: 'Ajouter',
-              onTap: () => showCustomPopup(context),
+              onTap: () => showCustomPopup(context, onAddItem: addAlarm),
             ),
             SpeedDialChild(
               child: const Icon(Icons.edit),

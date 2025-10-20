@@ -22,16 +22,14 @@ class MainCard extends StatefulWidget {
 }
 
 class _MainCardState extends State<MainCard> {
-  late bool _isEnabled; // disable the ExpansionTile if expansionChild is empty
-
   @override
   void initState() {
     super.initState();
-    _isEnabled = widget.expansionChild.isNotEmpty;
   }
 
   @override
   Widget build(BuildContext context) {
+    final isEnabled = widget.expansionChild.isNotEmpty;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10.0),
       child: Card.outlined(
@@ -40,7 +38,7 @@ class _MainCardState extends State<MainCard> {
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: AbsorbPointer(
-            absorbing: !_isEnabled,
+            absorbing: !isEnabled,
             child: ExpansionTile(
               title: Text(
                 widget.leadingLabel,
@@ -52,13 +50,13 @@ class _MainCardState extends State<MainCard> {
                 color: Theme.of(context).iconTheme.color,
               ),
               // Default chevron if the widget is enabled
-              trailing: !_isEnabled ? const SizedBox() : null,
+              trailing: !isEnabled ? const SizedBox() : null,
               shape: const RoundedRectangleBorder(
                 side: BorderSide(color: Colors.transparent),
-                borderRadius: BorderRadius.all(Radius.circular(15)),
+                // borderRadius: BorderRadius.all(Radius.circular),
               ),
-              onExpansionChanged: _isEnabled ? (expanded) {} : null,
-              children: _isEnabled ? widget.expansionChild : [],
+              onExpansionChanged: isEnabled ? (expanded) {} : null,
+              children: isEnabled ? widget.expansionChild : [],
             ),
           ),
         ),

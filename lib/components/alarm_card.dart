@@ -1,28 +1,43 @@
 import 'package:flutter/material.dart';
 import 'package:lumiere/functions/card_theme.dart';
 import 'package:lumiere/theme/theme.dart'; // for text styling
-// Functiions
+// Functions
 import 'package:lumiere/functions/show_time_picker.dart'; // show the time picker
 import 'package:lumiere/functions/custom_time_format.dart'; // format TimeOfDay
 
 class AlarmCard extends StatefulWidget {
-  const AlarmCard({super.key});
+  final TimeOfDay selectedAnimationTime;
+  final TimeOfDay selectedTime;
+  final ValueChanged<TimeOfDay> onAnimationTimeChanged;
+  final ValueChanged<TimeOfDay> onTimeChanged;
+
+  const AlarmCard({
+    super.key,
+    required this.selectedAnimationTime,
+    required this.selectedTime,
+    required this.onAnimationTimeChanged,
+    required this.onTimeChanged,
+  });
 
   @override
   State<AlarmCard> createState() => _AlarmCardState();
 }
 
 class _AlarmCardState extends State<AlarmCard> {
-  late TimeOfDay?
-  selectedAnimationTime; // duration of the lighting animation for the lamp
-  late TimeOfDay? selectedTime; // time at which the alarm finishes
   late String formattedTime; // time formatted to be used in a Text widget
 
   @override
   void initState() {
     super.initState();
-    selectedAnimationTime = TimeOfDay(hour: 0, minute: 30);
-    formattedTime = formatTimeOfDay(selectedAnimationTime!);
+    formattedTime = formatTimeOfDay(widget.selectedAnimationTime);
+  }
+
+  @override
+  void didUpdateWidget(covariant AlarmCard oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.selectedAnimationTime != widget.selectedAnimationTime) {
+      formattedTime = formatTimeOfDay(widget.selectedAnimationTime);
+    }
   }
 
   @override
@@ -39,10 +54,10 @@ class _AlarmCardState extends State<AlarmCard> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Pour un reveil en douceur', style: leadingTextStyle(context)),
-            Divider(thickness: 1, color: Colors.grey),
+            Text('Pour un réveil en douceur', style: leadingTextStyle(context)),
+            const Divider(thickness: 1, color: Colors.grey),
             Text(
-              'Allume la lampe progressivement jusqu’à l’heure sélectionné.',
+              'Allume la lampe progressivement jusqu’à l’heure sélectionnée.',
               style: subTextStyle(context),
             ),
             Row(
@@ -52,14 +67,9 @@ class _AlarmCardState extends State<AlarmCard> {
                   onPressed: () {
                     showCustomTimePicker(
                       context: context,
-                      initialTime: selectedAnimationTime,
+                      initialTime: widget.selectedAnimationTime,
                       onTimeSelected: (time) {
-                        setState(() {
-                          selectedAnimationTime = time;
-                          formattedTime = formatTimeOfDay(
-                            selectedAnimationTime!,
-                          );
-                        });
+                        widget.onAnimationTimeChanged(time!);
                       },
                     );
                   },
@@ -70,7 +80,6 @@ class _AlarmCardState extends State<AlarmCard> {
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Center(
-                // ClipRRect to have rounded corners on the image
                 child: ClipRRect(
                   borderRadius: cardBorderRadius,
                   child: Image.asset(
@@ -80,20 +89,19 @@ class _AlarmCardState extends State<AlarmCard> {
                 ),
               ),
             ),
-            ElevatedButton(
-              onPressed: () {
-                showCustomTimePicker(
-                  context: context,
-                  initialTime: selectedAnimationTime,
-                  onTimeSelected: (time) {
-                    setState(() {
-                      selectedAnimationTime = time;
-                      formattedTime = formatTimeOfDay(selectedAnimationTime!);
-                    });
-                  },
-                );
-              },
-              child: Text('Définir l\'heure', style: subTextStyle(context)),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  showCustomTimePicker(
+                    context: context,
+                    initialTime: widget.selectedTime,
+                    onTimeSelected: (time) {
+                      widget.onTimeChanged(time!);
+                    },
+                  );
+                },
+                child: Text('Définir l\'heure', style: subTextStyle(context)),
+              ),
             ),
           ],
         ),
