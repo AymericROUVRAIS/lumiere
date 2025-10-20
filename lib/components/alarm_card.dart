@@ -14,14 +14,15 @@ class AlarmCard extends StatefulWidget {
 
 class _AlarmCardState extends State<AlarmCard> {
   late TimeOfDay?
-  selectedTime; // duration of the lighting animation for the lamp
+  selectedAnimationTime; // duration of the lighting animation for the lamp
+  late TimeOfDay? selectedTime; // time at which the alarm finishes
   late String formattedTime; // time formatted to be used in a Text widget
 
   @override
   void initState() {
     super.initState();
-    selectedTime = TimeOfDay(hour: 0, minute: 30);
-    formattedTime = formatTimeOfDay(selectedTime!);
+    selectedAnimationTime = TimeOfDay(hour: 0, minute: 30);
+    formattedTime = formatTimeOfDay(selectedAnimationTime!);
   }
 
   @override
@@ -51,11 +52,13 @@ class _AlarmCardState extends State<AlarmCard> {
                   onPressed: () {
                     showCustomTimePicker(
                       context: context,
-                      initialTime: selectedTime,
+                      initialTime: selectedAnimationTime,
                       onTimeSelected: (time) {
                         setState(() {
-                          selectedTime = time;
-                          formattedTime = formatTimeOfDay(selectedTime!);
+                          selectedAnimationTime = time;
+                          formattedTime = formatTimeOfDay(
+                            selectedAnimationTime!,
+                          );
                         });
                       },
                     );
@@ -76,6 +79,21 @@ class _AlarmCardState extends State<AlarmCard> {
                   ),
                 ),
               ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                showCustomTimePicker(
+                  context: context,
+                  initialTime: selectedAnimationTime,
+                  onTimeSelected: (time) {
+                    setState(() {
+                      selectedAnimationTime = time;
+                      formattedTime = formatTimeOfDay(selectedAnimationTime!);
+                    });
+                  },
+                );
+              },
+              child: Text('Définir l\'heure', style: subTextStyle(context)),
             ),
           ],
         ),
