@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ionicons/ionicons.dart';
 import 'package:lumiere/theme/theme.dart';
 
 class MainCard extends StatefulWidget {
