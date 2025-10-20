@@ -46,7 +46,7 @@ final ThemeData lightMode = ThemeData(
           Colors.transparent, // Color not selected : bg ( Color(0xFFe7e8ee) )
       inactiveFgColor: Colors.black, // Color not selected : text
       borderColor: Colors.grey,
-      borderWidth: 2.0,
+      borderWidth: 1.0,
       cornerRadius: 8.0,
     ),
     DialogCardTheme(
@@ -98,7 +98,7 @@ final ThemeData darkMode = ThemeData(
     const ToggleSwitchThemeExtension(
       activeBgColor: Color(
         0xFF543b72,
-      ), // Color of selected : bg Color(0xFFd8bafa)
+      ), // Color of selected : bg ( Color(0xFFd8bafa) )
       activeFgColor: Colors.white, // Color of selected : Text
       inactiveBgColor: Colors.transparent, // Color(0xFF2c292f)
       inactiveFgColor: Colors.white,
