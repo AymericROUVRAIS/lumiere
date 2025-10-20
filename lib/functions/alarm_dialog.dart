@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:toggle_switch/toggle_switch.dart';
+import 'package:lumiere/functions/switch_theme.dart';
+import 'package:lumiere/components/alarm_card.dart';
 
 Future<int?> showCustomPopup(BuildContext context, {int initialIndex = 0}) {
   int dialogIndex = initialIndex;
+  final toggleSwitchTheme = Theme.of(
+    context,
+  ).extension<ToggleSwitchThemeExtension>()!;
 
   return showDialog<int>(
     context: context,
@@ -28,25 +33,16 @@ Future<int?> showCustomPopup(BuildContext context, {int initialIndex = 0}) {
                     children: [
                       ToggleSwitch(
                         totalSwitches: 2,
-                        minWidth: switchWidth, // dynamically sized
+                        minWidth: switchWidth, // dynamically sized width
                         initialLabelIndex: dialogIndex,
-                        borderWidth: 2.0,
+                        borderWidth: toggleSwitchTheme.borderWidth,
                         cornerRadius: 50.0,
                         labels: ['Reveil', 'Alarme'],
-                        activeBgColor: [
-                          Theme.of(context)
-                                  .elevatedButtonTheme
-                                  .style
-                                  ?.foregroundColor
-                                  ?.resolve({}) ??
-                              Colors.blue,
-                        ],
-                        activeFgColor: Colors.white,
-                        inactiveBgColor:
-                            Colors.transparent, // transparent background
-                        inactiveFgColor: Colors.black,
-                        borderColor: [Colors.blue], // adds outline
-
+                        activeBgColor: [toggleSwitchTheme.activeBgColor],
+                        activeFgColor: toggleSwitchTheme.activeFgColor,
+                        inactiveBgColor: Colors.transparent,
+                        inactiveFgColor: toggleSwitchTheme.inactiveFgColor,
+                        borderColor: [toggleSwitchTheme.borderColor],
                         onToggle: (index) {
                           setState(() {
                             dialogIndex = index ?? 0;
@@ -54,12 +50,7 @@ Future<int?> showCustomPopup(BuildContext context, {int initialIndex = 0}) {
                         },
                       ),
                       const SizedBox(height: 20),
-                      TextButton(
-                        onPressed: () {
-                          Navigator.of(context).pop(dialogIndex);
-                        },
-                        child: const Text("Close"),
-                      ),
+                      ?(dialogIndex == 0) ? AlarmCard() : null,
                     ],
                   );
                 },
@@ -71,3 +62,12 @@ Future<int?> showCustomPopup(BuildContext context, {int initialIndex = 0}) {
     },
   );
 }
+
+/*
+ElevatedButton(
+  onPressed: () {
+    Navigator.of(context).pop(dialogIndex);
+  },
+  child: const Text("Close"),
+),
+ */
