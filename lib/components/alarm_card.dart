@@ -27,6 +27,9 @@ class _AlarmCardState extends State<AlarmCard> {
   @override
   Widget build(BuildContext context) {
     final dialogCardTheme = Theme.of(context).extension<DialogCardTheme>()!;
+    final cardBorderRadius =
+        (dialogCardTheme.shape as RoundedRectangleBorder).borderRadius;
+
     return Card.outlined(
       color: dialogCardTheme.color,
       shape: dialogCardTheme.shape,
@@ -37,6 +40,10 @@ class _AlarmCardState extends State<AlarmCard> {
           children: [
             Text('Pour un reveil en douceur', style: leadingTextStyle(context)),
             Divider(thickness: 1, color: Colors.grey),
+            Text(
+              'Allume la lampe progressivement jusqu’à l’heure sélectionné.',
+              style: subTextStyle(context),
+            ),
             Row(
               children: [
                 Text('Durée : ', style: subTextStyle(context)),
@@ -53,9 +60,22 @@ class _AlarmCardState extends State<AlarmCard> {
                       },
                     );
                   },
-                  child: Text(formattedTime),
+                  child: Text(formattedTime, style: subTextStyle(context)),
                 ),
               ],
+            ),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Center(
+                // ClipRRect to have rounded corners on the image
+                child: ClipRRect(
+                  borderRadius: cardBorderRadius,
+                  child: Image.asset(
+                    'images/mushroom_lamp.jpeg',
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
             ),
           ],
         ),

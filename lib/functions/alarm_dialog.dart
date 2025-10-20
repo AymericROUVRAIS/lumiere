@@ -15,45 +15,38 @@ Future<int?> showCustomPopup(BuildContext context, {int initialIndex = 0}) {
       return StatefulBuilder(
         builder: (context, setState) {
           return Dialog(
+            elevation: 16,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20),
             ),
-            elevation: 16,
-            child: Container(
+            child: Padding(
               padding: const EdgeInsets.all(20),
-              height: 250,
-              child: LayoutBuilder(
-                builder: (context, constraints) {
-                  // The available width inside the dialog
-                  double availableWidth = constraints.maxWidth;
-                  double switchWidth = (availableWidth - 40) / 2;
-
-                  return Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      ToggleSwitch(
-                        totalSwitches: 2,
-                        minWidth: switchWidth, // dynamically sized width
-                        initialLabelIndex: dialogIndex,
-                        borderWidth: toggleSwitchTheme.borderWidth,
-                        cornerRadius: 50.0,
-                        labels: ['Reveil', 'Alarme'],
-                        activeBgColor: [toggleSwitchTheme.activeBgColor],
-                        activeFgColor: toggleSwitchTheme.activeFgColor,
-                        inactiveBgColor: Colors.transparent,
-                        inactiveFgColor: toggleSwitchTheme.inactiveFgColor,
-                        borderColor: [toggleSwitchTheme.borderColor],
-                        onToggle: (index) {
-                          setState(() {
-                            dialogIndex = index ?? 0;
-                          });
-                        },
-                      ),
-                      const SizedBox(height: 20),
-                      ?(dialogIndex == 0) ? AlarmCard() : null,
-                    ],
-                  );
-                },
+              child: IntrinsicHeight(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min, // Wrap content vertically
+                  children: [
+                    ToggleSwitch(
+                      totalSwitches: 2,
+                      minWidth: 100,
+                      initialLabelIndex: dialogIndex,
+                      borderWidth: toggleSwitchTheme.borderWidth,
+                      cornerRadius: 50.0,
+                      labels: ['Reveil', 'Alarme'],
+                      activeBgColor: [toggleSwitchTheme.activeBgColor],
+                      activeFgColor: toggleSwitchTheme.activeFgColor,
+                      inactiveBgColor: Colors.transparent,
+                      inactiveFgColor: toggleSwitchTheme.inactiveFgColor,
+                      borderColor: [toggleSwitchTheme.borderColor],
+                      onToggle: (index) {
+                        setState(() {
+                          dialogIndex = index ?? 0;
+                        });
+                      },
+                    ),
+                    const SizedBox(height: 20),
+                    if (dialogIndex == 0) AlarmCard(),
+                  ],
+                ),
               ),
             ),
           );
