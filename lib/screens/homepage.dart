@@ -22,6 +22,14 @@ class _HomePageState extends State<HomePage> {
 
   void addAlarm(ListTile tile) {
     setState(() {
+      if (alarmChild.isEmpty) {
+        alarmChild.add(
+          ListTile(
+            title: const Divider(thickness: 1),
+            visualDensity: VisualDensity.compact,
+          ),
+        );
+      }
       alarmChild.add(tile);
     });
   }
