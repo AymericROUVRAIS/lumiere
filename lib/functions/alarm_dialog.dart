@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:toggle_switch/toggle_switch.dart';
 import 'package:lumiere/theme/theme.dart'; // for text styling
 import 'package:lumiere/components/alarm_card.dart';
+import 'package:lumiere/components/alarm_list_card.dart';
 import 'package:lumiere/functions/switch_theme.dart';
-import 'package:lumiere/functions/create_alarm.dart';
 
 Future<int?> showCustomPopup(
   BuildContext context, {
@@ -76,10 +76,11 @@ Future<int?> showCustomPopup(
                       padding: const EdgeInsets.only(top: 10.0),
                       child: ElevatedButton(
                         onPressed: () {
-                          final newItem = addToList(
+                          final newItem = AlarmListCard.buildTile(
+                            context: context,
                             duration: duration,
                             date: selecTime,
-                          );
+                          ); // builds a ListTile
                           onAddItem(newItem); // parent updates its own list
                           Navigator.of(context).pop(dialogIndex);
                         },

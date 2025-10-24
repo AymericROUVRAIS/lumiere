@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lumiere/theme/theme.dart';
 
 class SettingsDivider extends StatelessWidget {
   const SettingsDivider({super.key});
