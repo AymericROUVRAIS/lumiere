@@ -1,6 +1,6 @@
 # Lumiere
 
-Application pour contrôler une lampe connecté
+Software to control custom connected lamp.
 
 ## Objectives
 
@@ -21,13 +21,10 @@ Go checkout packages used in the app:
 - [Toggle switch](https://github.com/PramodJoshi/toggle_switch)
 - [Ionicons](https://ionic.io/ionicons)
 
-## Branch
-
-This branch is only for the App development.
-
 ## To do
 
 The list of everything to do :
 - Bluetooth integration
 - Communication between the app and an esp32
 - Different languages
+- Developpment of the lamp
