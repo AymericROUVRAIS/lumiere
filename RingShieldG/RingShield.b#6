@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1705,33 +1705,33 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="5V_RELAY" library="SRD-05VDC-SL-C" package="RELAY_SRD-05VDC-SL-C" value="SRD-05VDC-SL-C" x="-22.86" y="10.16" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/SRD-05VDC-SL-C/Songle+Relay/view-part/?ref=eda" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value="                                                      5V Trigger Relay Module For Arduino And Raspberry Pi 5V Trigger Relay Module For Arduino And Raspberry Pi                                              " x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Songle Relay" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="SRD-05VDC-SL-C" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-32.66093125" y="18.36078125" size="1.27011875" layer="25"/>
-<attribute name="PACKAGE" value="NON STANDARD-5 Songle Relay" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/SRD-05VDC-SL-C/Songle+Relay/view-part/?ref=snap" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-32.663040625" y="0.857109375" size="1.270390625" layer="27"/>
+<element name="5V_RELAY" library="SRD-05VDC-SL-C" package="RELAY_SRD-05VDC-SL-C" value="SRD-05VDC-SL-C" x="29.16" y="100.14" smashed="yes" rot="MR90">
+<attribute name="AVAILABILITY" value="In Stock" x="19" y="123" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/SRD-05VDC-SL-C/Songle+Relay/view-part/?ref=eda" x="19" y="123" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DESCRIPTION" value="                                                      5V Trigger Relay Module For Arduino And Raspberry Pi 5V Trigger Relay Module For Arduino And Raspberry Pi                                              " x="19" y="123" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MF" value="Songle Relay" x="19" y="123" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MP" value="SRD-05VDC-SL-C" x="19" y="123" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="37.36078125" y="90.33906875" size="1.27011875" layer="26" rot="MR90"/>
+<attribute name="PACKAGE" value="NON STANDARD-5 Songle Relay" x="19" y="123" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="PRICE" value="None" x="19" y="123" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/SRD-05VDC-SL-C/Songle+Relay/view-part/?ref=snap" x="19" y="123" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="19.857109375" y="90.336959375" size="1.270390625" layer="28" rot="MR90"/>
 </element>
-<element name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" package="2,8-PAD" package3d_urn="urn:adsk.eagle:package:14281/1" value="MOUNT-PAD-ROUND2.8" x="41.96" y="71.81" smashed="yes">
-<attribute name="POPULARITY" value="6" x="108" y="68" size="1.778" layer="27" display="off"/>
+<element name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" package="2,8-PAD" package3d_urn="urn:adsk.eagle:package:14281/1" value="MOUNT-PAD-ROUND2.8" x="40.96" y="71.81" smashed="yes">
+<attribute name="POPULARITY" value="6" x="107" y="68" size="1.778" layer="27" display="off"/>
 </element>
-<element name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" package="2,8-PAD" package3d_urn="urn:adsk.eagle:package:14281/1" value="MOUNT-PAD-ROUND2.8" x="42.49" y="63.13" smashed="yes">
-<attribute name="POPULARITY" value="6" x="59" y="39" size="1.778" layer="27" display="off"/>
+<element name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" package="2,8-PAD" package3d_urn="urn:adsk.eagle:package:14281/1" value="MOUNT-PAD-ROUND2.8" x="41.49" y="63.13" smashed="yes">
+<attribute name="POPULARITY" value="6" x="58" y="39" size="1.778" layer="27" display="off"/>
 </element>
 <element name="PCB_CONNECTOR" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X03/90" package3d_urn="urn:adsk.eagle:package:22459/2" value="" x="69.35" y="114.12" smashed="yes" rot="MR90">
 <attribute name="NAME" x="65.54" y="109.675" size="1.27" layer="26" ratio="10" rot="MR180"/>
 <attribute name="POPULARITY" value="17" x="63" y="170" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="65.54" y="119.835" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X06/90" package3d_urn="urn:adsk.eagle:package:22475/2" value="" x="-41.91" y="6.35" smashed="yes">
-<attribute name="NAME" x="-50.165" y="2.54" size="1.27" layer="25" ratio="10" rot="R90"/>
-<attribute name="POPULARITY" value="10" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-32.385" y="2.54" size="1.27" layer="27" rot="R90"/>
+<element name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X06/90" package3d_urn="urn:adsk.eagle:package:22475/2" value="" x="56.35" y="36.09" smashed="yes" rot="MR90">
+<attribute name="NAME" x="52.54" y="27.835" size="1.27" layer="26" ratio="10" rot="MR180"/>
+<attribute name="POPULARITY" value="10" x="50" y="78" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="52.54" y="45.615" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="LEFT_SIDE" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X08" package3d_urn="urn:adsk.eagle:package:22409/2" value="" x="28" y="65" smashed="yes" rot="MR90">
 <attribute name="NAME" x="29.8288" y="54.7638" size="1.27" layer="26" ratio="10" rot="MR90"/>
@@ -1785,197 +1785,197 @@ design rules under a new name.</description>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="63" y="31" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="51.75" y="24.515" size="1.27" layer="27" rot="R270" align="top-left"/>
 </element>
-<element name="D4" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="46" y="26" smashed="yes" rot="R90">
-<attribute name="AVAILABILITY" value="In Stock" x="37" y="18" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="37" y="18" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="37" y="18" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="WorldSemi" x="37" y="18" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MP" value="WS2812B2020" x="37" y="18" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="43.75" y="24.485" size="1.27" layer="25" rot="R90"/>
-<attribute name="PACKAGE" value="None" x="37" y="18" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PRICE" value="None" x="37" y="18" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="37" y="18" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="48.25" y="24.485" size="1.27" layer="27" rot="R90" align="top-left"/>
+<element name="D4" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="46.5" y="25.6" smashed="yes" rot="R270">
+<attribute name="AVAILABILITY" value="In Stock" x="55.5" y="33.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="55.5" y="33.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="55.5" y="33.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="WorldSemi" x="55.5" y="33.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MP" value="WS2812B2020" x="55.5" y="33.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="48.75" y="27.115" size="1.27" layer="25" rot="R270"/>
+<attribute name="PACKAGE" value="None" x="55.5" y="33.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PRICE" value="None" x="55.5" y="33.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="55.5" y="33.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="44.25" y="27.115" size="1.27" layer="27" rot="R270" align="top-left"/>
 </element>
-<element name="D5" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="41" y="29" smashed="yes" rot="R270">
-<attribute name="AVAILABILITY" value="In Stock" x="50" y="37" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="50" y="37" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="50" y="37" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="WorldSemi" x="50" y="37" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MP" value="WS2812B2020" x="50" y="37" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="43.25" y="30.515" size="1.27" layer="25" rot="R270"/>
-<attribute name="PACKAGE" value="None" x="50" y="37" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PRICE" value="None" x="50" y="37" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="50" y="37" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="38.75" y="30.515" size="1.27" layer="27" rot="R270" align="top-left"/>
+<element name="D5" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="40.6" y="29.2" smashed="yes" rot="R220">
+<attribute name="AVAILABILITY" value="In Stock" x="52.513446875" y="27.4479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="52.513446875" y="27.4479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="52.513446875" y="27.4479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="MF" value="WorldSemi" x="52.513446875" y="27.4479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="MP" value="WS2812B2020" x="52.513446875" y="27.4479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="NAME" x="43.206834375" y="28.450221875" size="1.27" layer="25" rot="R220"/>
+<attribute name="PACKAGE" value="None" x="52.513446875" y="27.4479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="PRICE" value="None" x="52.513446875" y="27.4479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="52.513446875" y="27.4479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="VALUE" x="40.3142875" y="31.897425" size="1.27" layer="27" rot="R220" align="top-left"/>
 </element>
-<element name="D6" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="36" y="34" smashed="yes" rot="R90">
-<attribute name="AVAILABILITY" value="In Stock" x="27" y="26" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="27" y="26" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="27" y="26" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="WorldSemi" x="27" y="26" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MP" value="WS2812B2020" x="27" y="26" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="33.75" y="32.485" size="1.27" layer="25" rot="R90"/>
-<attribute name="PACKAGE" value="None" x="27" y="26" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PRICE" value="None" x="27" y="26" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="27" y="26" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="38.25" y="32.485" size="1.27" layer="27" rot="R90" align="top-left"/>
+<element name="D6" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="35.9" y="33.4" smashed="yes" rot="R220">
+<attribute name="AVAILABILITY" value="In Stock" x="47.81344375" y="31.6479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="47.81344375" y="31.6479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="47.81344375" y="31.6479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="MF" value="WorldSemi" x="47.81344375" y="31.6479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="MP" value="WS2812B2020" x="47.81344375" y="31.6479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="NAME" x="38.506828125" y="32.650221875" size="1.27" layer="25" rot="R220"/>
+<attribute name="PACKAGE" value="None" x="47.81344375" y="31.6479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="PRICE" value="None" x="47.81344375" y="31.6479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="47.81344375" y="31.6479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="VALUE" x="35.614284375" y="36.097421875" size="1.27" layer="27" rot="R220" align="top-left"/>
 </element>
-<element name="D7" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="31" y="38" smashed="yes" rot="R270">
-<attribute name="AVAILABILITY" value="In Stock" x="40" y="46" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="40" y="46" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="40" y="46" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="WorldSemi" x="40" y="46" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MP" value="WS2812B2020" x="40" y="46" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="33.25" y="39.515" size="1.27" layer="25" rot="R270"/>
-<attribute name="PACKAGE" value="None" x="40" y="46" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PRICE" value="None" x="40" y="46" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="40" y="46" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="28.75" y="39.515" size="1.27" layer="27" rot="R270" align="top-left"/>
+<element name="D7" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="31.3" y="38" smashed="yes" rot="R220">
+<attribute name="AVAILABILITY" value="In Stock" x="43.21344375" y="36.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="43.21344375" y="36.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="43.21344375" y="36.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="MF" value="WorldSemi" x="43.21344375" y="36.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="MP" value="WS2812B2020" x="43.21344375" y="36.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="NAME" x="33.906828125" y="37.250221875" size="1.27" layer="25" rot="R220"/>
+<attribute name="PACKAGE" value="None" x="43.21344375" y="36.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="PRICE" value="None" x="43.21344375" y="36.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="43.21344375" y="36.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="VALUE" x="31.014284375" y="40.697421875" size="1.27" layer="27" rot="R220" align="top-left"/>
 </element>
-<element name="D8" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="28" y="43" smashed="yes" rot="R45">
-<attribute name="AVAILABILITY" value="In Stock" x="15.979184375" y="43.70710625" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="15.979184375" y="43.70710625" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="15.979184375" y="43.70710625" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="MF" value="WorldSemi" x="15.979184375" y="43.70710625" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="MP" value="WS2812B2020" x="15.979184375" y="43.70710625" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="NAME" x="25.337740625" y="43.519721875" size="1.27" layer="25" rot="R45"/>
-<attribute name="PACKAGE" value="None" x="15.979184375" y="43.70710625" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="PRICE" value="None" x="15.979184375" y="43.70710625" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="15.979184375" y="43.70710625" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="VALUE" x="28.519721875" y="40.337740625" size="1.27" layer="27" rot="R45" align="top-left"/>
+<element name="D8" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="28" y="43" smashed="yes" rot="R220">
+<attribute name="AVAILABILITY" value="In Stock" x="39.91344375" y="41.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="39.91344375" y="41.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="39.91344375" y="41.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="MF" value="WorldSemi" x="39.91344375" y="41.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="MP" value="WS2812B2020" x="39.91344375" y="41.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="NAME" x="30.60683125" y="42.250221875" size="1.27" layer="25" rot="R220"/>
+<attribute name="PACKAGE" value="None" x="39.91344375" y="41.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="PRICE" value="None" x="39.91344375" y="41.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="39.91344375" y="41.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="VALUE" x="27.714284375" y="45.697425" size="1.27" layer="27" rot="R220" align="top-left"/>
 </element>
-<element name="D9" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="25" y="48" smashed="yes" rot="R45">
-<attribute name="AVAILABILITY" value="In Stock" x="12.979184375" y="48.70710625" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="12.979184375" y="48.70710625" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="12.979184375" y="48.70710625" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="MF" value="WorldSemi" x="12.979184375" y="48.70710625" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="MP" value="WS2812B2020" x="12.979184375" y="48.70710625" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="NAME" x="22.337740625" y="48.519721875" size="1.27" layer="25" rot="R45"/>
-<attribute name="PACKAGE" value="None" x="12.979184375" y="48.70710625" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="PRICE" value="None" x="12.979184375" y="48.70710625" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="12.979184375" y="48.70710625" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="VALUE" x="25.519721875" y="45.337740625" size="1.27" layer="27" rot="R45" align="top-left"/>
+<element name="D9" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="25" y="48" smashed="yes" rot="R220">
+<attribute name="AVAILABILITY" value="In Stock" x="36.91344375" y="46.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="36.91344375" y="46.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="36.91344375" y="46.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="MF" value="WorldSemi" x="36.91344375" y="46.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="MP" value="WS2812B2020" x="36.91344375" y="46.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="NAME" x="27.60683125" y="47.250221875" size="1.27" layer="25" rot="R220"/>
+<attribute name="PACKAGE" value="None" x="36.91344375" y="46.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="PRICE" value="None" x="36.91344375" y="46.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="36.91344375" y="46.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="VALUE" x="24.714284375" y="50.697425" size="1.27" layer="27" rot="R220" align="top-left"/>
 </element>
-<element name="D10" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="23" y="53" smashed="yes" rot="R30">
-<attribute name="AVAILABILITY" value="In Stock" x="11.57179375" y="56.794228125" size="1.778" layer="27" rot="R30" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="11.57179375" y="56.794228125" size="1.778" layer="27" rot="R30" display="off"/>
-<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="11.57179375" y="56.794228125" size="1.778" layer="27" rot="R30" display="off"/>
-<attribute name="MF" value="WorldSemi" x="11.57179375" y="56.794228125" size="1.778" layer="27" rot="R30" display="off"/>
-<attribute name="MP" value="WS2812B2020" x="11.57179375" y="56.794228125" size="1.778" layer="27" rot="R30" display="off"/>
-<attribute name="NAME" x="20.56296875" y="54.19105625" size="1.27" layer="25" rot="R30"/>
-<attribute name="PACKAGE" value="None" x="11.57179375" y="56.794228125" size="1.778" layer="27" rot="R30" display="off"/>
-<attribute name="PRICE" value="None" x="11.57179375" y="56.794228125" size="1.778" layer="27" rot="R30" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="11.57179375" y="56.794228125" size="1.778" layer="27" rot="R30" display="off"/>
-<attribute name="VALUE" x="22.81296875" y="50.293940625" size="1.27" layer="27" rot="R30" align="top-left"/>
+<element name="D10" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="23" y="53" smashed="yes" rot="R220">
+<attribute name="AVAILABILITY" value="In Stock" x="34.913446875" y="51.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="34.913446875" y="51.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="34.913446875" y="51.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="MF" value="WorldSemi" x="34.913446875" y="51.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="MP" value="WS2812B2020" x="34.913446875" y="51.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="NAME" x="25.60683125" y="52.250221875" size="1.27" layer="25" rot="R220"/>
+<attribute name="PACKAGE" value="None" x="34.913446875" y="51.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="PRICE" value="None" x="34.913446875" y="51.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="34.913446875" y="51.2479" size="1.778" layer="27" rot="R220" display="off"/>
+<attribute name="VALUE" x="22.7142875" y="55.697425" size="1.27" layer="27" rot="R220" align="top-left"/>
 </element>
-<element name="D11" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="21" y="59" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="13" y="68" size="1.778" layer="27" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="13" y="68" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="13" y="68" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="WorldSemi" x="13" y="68" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="WS2812B2020" x="13" y="68" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="19.485" y="61.25" size="1.27" layer="25"/>
-<attribute name="PACKAGE" value="None" x="13" y="68" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="13" y="68" size="1.778" layer="27" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="13" y="68" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="19.485" y="56.75" size="1.27" layer="27" align="top-left"/>
+<element name="D11" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="21" y="59" smashed="yes" rot="R180">
+<attribute name="AVAILABILITY" value="In Stock" x="29" y="50" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="29" y="50" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="29" y="50" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="WorldSemi" x="29" y="50" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MP" value="WS2812B2020" x="29" y="50" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="22.515" y="56.75" size="1.27" layer="25" rot="R180"/>
+<attribute name="PACKAGE" value="None" x="29" y="50" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PRICE" value="None" x="29" y="50" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="29" y="50" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="22.515" y="61.25" size="1.27" layer="27" rot="R180" align="top-left"/>
 </element>
-<element name="D12" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="20" y="68" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="12" y="77" size="1.778" layer="27" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="12" y="77" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="12" y="77" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="WorldSemi" x="12" y="77" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="WS2812B2020" x="12" y="77" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="18.485" y="70.25" size="1.27" layer="25"/>
-<attribute name="PACKAGE" value="None" x="12" y="77" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="12" y="77" size="1.778" layer="27" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="12" y="77" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="18.485" y="65.75" size="1.27" layer="27" align="top-left"/>
+<element name="D12" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="20" y="68" smashed="yes" rot="R180">
+<attribute name="AVAILABILITY" value="In Stock" x="28" y="59" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="28" y="59" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="28" y="59" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="WorldSemi" x="28" y="59" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MP" value="WS2812B2020" x="28" y="59" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="21.515" y="65.75" size="1.27" layer="25" rot="R180"/>
+<attribute name="PACKAGE" value="None" x="28" y="59" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PRICE" value="None" x="28" y="59" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="28" y="59" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="21.515" y="70.25" size="1.27" layer="27" rot="R180" align="top-left"/>
 </element>
-<element name="D13" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="20" y="76" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="12" y="85" size="1.778" layer="27" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="12" y="85" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="12" y="85" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="WorldSemi" x="12" y="85" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="WS2812B2020" x="12" y="85" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="18.485" y="78.25" size="1.27" layer="25"/>
-<attribute name="PACKAGE" value="None" x="12" y="85" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="12" y="85" size="1.778" layer="27" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="12" y="85" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="18.485" y="73.75" size="1.27" layer="27" align="top-left"/>
+<element name="D13" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="20.4" y="76.1" smashed="yes" rot="R180">
+<attribute name="AVAILABILITY" value="In Stock" x="28.4" y="67.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="28.4" y="67.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="28.4" y="67.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="WorldSemi" x="28.4" y="67.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MP" value="WS2812B2020" x="28.4" y="67.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="21.915" y="73.85" size="1.27" layer="25" rot="R180"/>
+<attribute name="PACKAGE" value="None" x="28.4" y="67.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PRICE" value="None" x="28.4" y="67.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="28.4" y="67.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="21.915" y="78.35" size="1.27" layer="27" rot="R180" align="top-left"/>
 </element>
-<element name="D14" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="22" y="83" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="14" y="92" size="1.778" layer="27" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="14" y="92" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="14" y="92" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="WorldSemi" x="14" y="92" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="WS2812B2020" x="14" y="92" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="20.485" y="85.25" size="1.27" layer="25"/>
-<attribute name="PACKAGE" value="None" x="14" y="92" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="14" y="92" size="1.778" layer="27" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="14" y="92" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="20.485" y="80.75" size="1.27" layer="27" align="top-left"/>
+<element name="D14" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="21.7" y="82.8" smashed="yes" rot="R180">
+<attribute name="AVAILABILITY" value="In Stock" x="29.7" y="73.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="29.7" y="73.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="29.7" y="73.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="WorldSemi" x="29.7" y="73.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MP" value="WS2812B2020" x="29.7" y="73.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="23.215" y="80.55" size="1.27" layer="25" rot="R180"/>
+<attribute name="PACKAGE" value="None" x="29.7" y="73.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PRICE" value="None" x="29.7" y="73.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="29.7" y="73.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="23.215" y="85.05" size="1.27" layer="27" rot="R180" align="top-left"/>
 </element>
-<element name="D15" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="24" y="90" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="16" y="99" size="1.778" layer="27" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="16" y="99" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="16" y="99" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="WorldSemi" x="16" y="99" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="WS2812B2020" x="16" y="99" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="22.485" y="92.25" size="1.27" layer="25"/>
-<attribute name="PACKAGE" value="None" x="16" y="99" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="16" y="99" size="1.778" layer="27" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="16" y="99" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="22.485" y="87.75" size="1.27" layer="27" align="top-left"/>
+<element name="D15" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="24" y="90" smashed="yes" rot="R180">
+<attribute name="AVAILABILITY" value="In Stock" x="32" y="81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="32" y="81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="32" y="81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="WorldSemi" x="32" y="81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MP" value="WS2812B2020" x="32" y="81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="25.515" y="87.75" size="1.27" layer="25" rot="R180"/>
+<attribute name="PACKAGE" value="None" x="32" y="81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PRICE" value="None" x="32" y="81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="32" y="81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="25.515" y="92.25" size="1.27" layer="27" rot="R180" align="top-left"/>
 </element>
-<element name="D16" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="27" y="95" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="19" y="104" size="1.778" layer="27" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="19" y="104" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="19" y="104" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="WorldSemi" x="19" y="104" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="WS2812B2020" x="19" y="104" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="25.485" y="97.25" size="1.27" layer="25"/>
-<attribute name="PACKAGE" value="None" x="19" y="104" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="19" y="104" size="1.778" layer="27" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="19" y="104" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="25.485" y="92.75" size="1.27" layer="27" align="top-left"/>
+<element name="D16" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="27" y="95" smashed="yes" rot="R180">
+<attribute name="AVAILABILITY" value="In Stock" x="35" y="86" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="35" y="86" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="35" y="86" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="WorldSemi" x="35" y="86" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MP" value="WS2812B2020" x="35" y="86" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="28.515" y="92.75" size="1.27" layer="25" rot="R180"/>
+<attribute name="PACKAGE" value="None" x="35" y="86" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PRICE" value="None" x="35" y="86" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="35" y="86" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="28.515" y="97.25" size="1.27" layer="27" rot="R180" align="top-left"/>
 </element>
-<element name="D17" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="32" y="102" smashed="yes" rot="R330">
-<attribute name="AVAILABILITY" value="In Stock" x="29.57179375" y="113.794228125" size="1.778" layer="27" rot="R330" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="29.57179375" y="113.794228125" size="1.778" layer="27" rot="R330" display="off"/>
-<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="29.57179375" y="113.794228125" size="1.778" layer="27" rot="R330" display="off"/>
-<attribute name="MF" value="WorldSemi" x="29.57179375" y="113.794228125" size="1.778" layer="27" rot="R330" display="off"/>
-<attribute name="MP" value="WS2812B2020" x="29.57179375" y="113.794228125" size="1.778" layer="27" rot="R330" display="off"/>
-<attribute name="NAME" x="31.81296875" y="104.70605625" size="1.27" layer="25" rot="R330"/>
-<attribute name="PACKAGE" value="None" x="29.57179375" y="113.794228125" size="1.778" layer="27" rot="R330" display="off"/>
-<attribute name="PRICE" value="None" x="29.57179375" y="113.794228125" size="1.778" layer="27" rot="R330" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="29.57179375" y="113.794228125" size="1.778" layer="27" rot="R330" display="off"/>
-<attribute name="VALUE" x="29.56296875" y="100.808940625" size="1.27" layer="27" rot="R330" align="top-left"/>
+<element name="D17" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="32" y="102" smashed="yes" rot="R120">
+<attribute name="AVAILABILITY" value="In Stock" x="28.205771875" y="90.57179375" size="1.778" layer="27" rot="R120" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="28.205771875" y="90.57179375" size="1.778" layer="27" rot="R120" display="off"/>
+<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="28.205771875" y="90.57179375" size="1.778" layer="27" rot="R120" display="off"/>
+<attribute name="MF" value="WorldSemi" x="28.205771875" y="90.57179375" size="1.778" layer="27" rot="R120" display="off"/>
+<attribute name="MP" value="WS2812B2020" x="28.205771875" y="90.57179375" size="1.778" layer="27" rot="R120" display="off"/>
+<attribute name="NAME" x="30.80894375" y="99.56296875" size="1.27" layer="25" rot="R120"/>
+<attribute name="PACKAGE" value="None" x="28.205771875" y="90.57179375" size="1.778" layer="27" rot="R120" display="off"/>
+<attribute name="PRICE" value="None" x="28.205771875" y="90.57179375" size="1.778" layer="27" rot="R120" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="28.205771875" y="90.57179375" size="1.778" layer="27" rot="R120" display="off"/>
+<attribute name="VALUE" x="34.706059375" y="101.812971875" size="1.27" layer="27" rot="R120" align="top-left"/>
 </element>
-<element name="D18" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="37" y="108" smashed="yes" rot="R315">
-<attribute name="AVAILABILITY" value="In Stock" x="37.70710625" y="120.020815625" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="37.70710625" y="120.020815625" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="37.70710625" y="120.020815625" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MF" value="WorldSemi" x="37.70710625" y="120.020815625" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="MP" value="WS2812B2020" x="37.70710625" y="120.020815625" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="37.519721875" y="110.662259375" size="1.27" layer="25" rot="R315"/>
-<attribute name="PACKAGE" value="None" x="37.70710625" y="120.020815625" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="PRICE" value="None" x="37.70710625" y="120.020815625" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="37.70710625" y="120.020815625" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="VALUE" x="34.337740625" y="107.480278125" size="1.27" layer="27" rot="R315" align="top-left"/>
+<element name="D18" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="37" y="108" smashed="yes" rot="R120">
+<attribute name="AVAILABILITY" value="In Stock" x="33.20576875" y="96.57179375" size="1.778" layer="27" rot="R120" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="33.20576875" y="96.57179375" size="1.778" layer="27" rot="R120" display="off"/>
+<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="33.20576875" y="96.57179375" size="1.778" layer="27" rot="R120" display="off"/>
+<attribute name="MF" value="WorldSemi" x="33.20576875" y="96.57179375" size="1.778" layer="27" rot="R120" display="off"/>
+<attribute name="MP" value="WS2812B2020" x="33.20576875" y="96.57179375" size="1.778" layer="27" rot="R120" display="off"/>
+<attribute name="NAME" x="35.80894375" y="105.56296875" size="1.27" layer="25" rot="R120"/>
+<attribute name="PACKAGE" value="None" x="33.20576875" y="96.57179375" size="1.778" layer="27" rot="R120" display="off"/>
+<attribute name="PRICE" value="None" x="33.20576875" y="96.57179375" size="1.778" layer="27" rot="R120" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="33.20576875" y="96.57179375" size="1.778" layer="27" rot="R120" display="off"/>
+<attribute name="VALUE" x="39.70605625" y="107.81296875" size="1.27" layer="27" rot="R120" align="top-left"/>
 </element>
-<element name="D19" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="44" y="113" smashed="yes" rot="R90">
-<attribute name="AVAILABILITY" value="In Stock" x="35" y="105" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="35" y="105" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="35" y="105" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="WorldSemi" x="35" y="105" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MP" value="WS2812B2020" x="35" y="105" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="41.75" y="111.485" size="1.27" layer="25" rot="R90"/>
-<attribute name="PACKAGE" value="None" x="35" y="105" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PRICE" value="None" x="35" y="105" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="35" y="105" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="46.25" y="111.485" size="1.27" layer="27" rot="R90" align="top-left"/>
+<element name="D19" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="44" y="113" smashed="yes" rot="R130">
+<attribute name="AVAILABILITY" value="In Stock" x="42.2479" y="101.08655625" size="1.778" layer="27" rot="R130" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=eda" x="42.2479" y="101.08655625" size="1.778" layer="27" rot="R130" display="off"/>
+<attribute name="DESCRIPTION" value="                                                      LED; SMD; 2020; RGB; 2x2x0.84mm; 3.7÷5.3V; Lens: transparent; 2kHz                                              " x="42.2479" y="101.08655625" size="1.778" layer="27" rot="R130" display="off"/>
+<attribute name="MF" value="WorldSemi" x="42.2479" y="101.08655625" size="1.778" layer="27" rot="R130" display="off"/>
+<attribute name="MP" value="WS2812B2020" x="42.2479" y="101.08655625" size="1.778" layer="27" rot="R130" display="off"/>
+<attribute name="NAME" x="43.250225" y="110.39316875" size="1.27" layer="25" rot="R130"/>
+<attribute name="PACKAGE" value="None" x="42.2479" y="101.08655625" size="1.778" layer="27" rot="R130" display="off"/>
+<attribute name="PRICE" value="None" x="42.2479" y="101.08655625" size="1.778" layer="27" rot="R130" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/WS2812B2020/Worldsemi/view-part/?ref=snap" x="42.2479" y="101.08655625" size="1.778" layer="27" rot="R130" display="off"/>
+<attribute name="VALUE" x="46.697425" y="113.2857125" size="1.27" layer="27" rot="R130" align="top-left"/>
 </element>
 <element name="D20" library="WS2812B2020" package="LED_WS2812B2020" value="WS2812B2020" x="51" y="116" smashed="yes" rot="R90">
 <attribute name="AVAILABILITY" value="In Stock" x="42" y="108" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2025,63 +2025,131 @@ design rules under a new name.</description>
 <contactref element="D19" pad="2"/>
 <contactref element="PCB_CONNECTOR" pad="1"/>
 <contactref element="D20" pad="2"/>
-<wire x1="51.55" y1="115.085" x2="65.54" y2="111.58" width="0" layer="19" extent="1-1"/>
-<wire x1="44.55" y1="112.085" x2="51.55" y2="115.085" width="0" layer="19" extent="1-1"/>
-<wire x1="35.9640875" y1="108.25809375" x2="44.55" y2="112.085" width="0" layer="19" extent="1-1"/>
-<wire x1="30.932584375" y1="101.981184375" x2="35.9640875" y2="108.25809375" width="0" layer="19" extent="1-1"/>
-<wire x1="26.085" y1="94.45" x2="30.932584375" y2="101.981184375" width="0" layer="19" extent="1-1"/>
-<wire x1="23.085" y1="89.45" x2="26.085" y2="94.45" width="0" layer="19" extent="1-1"/>
-<wire x1="21.085" y1="82.45" x2="23.085" y2="89.45" width="0" layer="19" extent="1-1"/>
-<wire x1="19.085" y1="75.45" x2="21.085" y2="82.45" width="0" layer="19" extent="1-1"/>
-<wire x1="19.085" y1="67.45" x2="19.085" y2="75.45" width="0" layer="19" extent="1-1"/>
-<wire x1="28" y1="66.27" x2="19.085" y2="67.45" width="0" layer="19" extent="1-1"/>
-<wire x1="28" y1="68.81" x2="28" y2="66.27" width="0" layer="19" extent="1-1"/>
-<wire x1="28" y1="71.35" x2="28" y2="68.81" width="0" layer="19" extent="1-1"/>
-<wire x1="28" y1="73.89" x2="28" y2="71.35" width="0" layer="19" extent="1-1"/>
-<wire x1="28" y1="63.73" x2="28" y2="66.27" width="0" layer="19" extent="1-1"/>
-<wire x1="20.085" y1="58.45" x2="19.085" y2="67.45" width="0" layer="19" extent="1-1"/>
-<wire x1="22.482584375" y1="52.066184375" x2="20.085" y2="58.45" width="0" layer="19" extent="1-1"/>
-<wire x1="24.741903125" y1="46.9640875" x2="22.482584375" y2="52.066184375" width="0" layer="19" extent="1-1"/>
-<wire x1="27.741903125" y1="41.9640875" x2="24.741903125" y2="46.9640875" width="0" layer="19" extent="1-1"/>
-<wire x1="30.45" y1="38.915" x2="27.741903125" y2="41.9640875" width="0" layer="19" extent="1-1"/>
-<wire x1="36.55" y1="33.085" x2="30.45" y2="38.915" width="0" layer="19" extent="1-1"/>
-<wire x1="40.45" y1="29.915" x2="36.55" y2="33.085" width="0" layer="19" extent="1-1"/>
-<wire x1="46.55" y1="25.085" x2="40.45" y2="29.915" width="0" layer="19" extent="1-1"/>
-<wire x1="53.45" y1="23.915" x2="46.55" y2="25.085" width="0" layer="19" extent="1-1"/>
-<wire x1="59.45" y1="21.915" x2="53.45" y2="23.915" width="0" layer="19" extent="1-1"/>
-<wire x1="67.55" y1="19.085" x2="59.45" y2="21.915" width="0" layer="19" extent="1-1"/>
-<wire x1="10" y1="71.35" x2="19.085" y2="67.45" width="0" layer="19" extent="1-1"/>
-<wire x1="10" y1="58.65" x2="20.085" y2="58.45" width="0" layer="19" extent="1-1"/>
-<wire x1="10" y1="56.11" x2="10" y2="58.65" width="0" layer="19" extent="1-1"/>
-<wire x1="42.49" y1="63.13" x2="28" y2="63.73" width="0" layer="19" extent="1-1"/>
-<wire x1="-16.76" y1="16.16" x2="10" y2="56.11" width="0" layer="19" extent="1-1"/>
-<wire x1="-28.96" y1="4.16" x2="-16.76" y2="16.16" width="0" layer="19" extent="1-1"/>
-<wire x1="-35.56" y1="2.54" x2="-28.96" y2="4.16" width="0" layer="19" extent="1-1"/>
+<wire x1="67.55" y1="19.085" x2="67.9728" y2="19.085" width="0.24" layer="1"/>
+<wire x1="67.9728" y1="19.085" x2="68.7878" y2="19.9" width="0.24" layer="1"/>
+<wire x1="68.7878" y1="19.9" x2="68.7878" y2="21.9122" width="0.24" layer="1"/>
+<wire x1="66.9" y1="23.8" x2="60.2" y2="23.8" width="0.24" layer="1"/>
+<wire x1="60.2" y1="23.8" x2="59.45" y2="23.05" width="0.24" layer="1"/>
+<wire x1="59.45" y1="23.05" x2="59.45" y2="21.915" width="0.24" layer="1"/>
+<wire x1="68.7878" y1="21.9122" x2="66.9" y2="23.8" width="0.24" layer="1"/>
+<wire x1="45.95" y1="26.515" x2="42.255525" y2="30.209475" width="0.24" layer="1"/>
+<wire x1="42.255525" y1="30.209475" x2="40.947396875" y2="30.209475" width="0.24" layer="1"/>
+<wire x1="40.947396875" y1="30.209475" x2="40.947396875" y2="32.252603125" width="0.24" layer="1"/>
+<wire x1="38.790525" y1="34.409475" x2="36.247396875" y2="34.409475" width="0.24" layer="1"/>
+<wire x1="40.947396875" y1="32.252603125" x2="38.790525" y2="34.409475" width="0.24" layer="1"/>
+<wire x1="52.54" y1="42.44" x2="40.947396875" y2="30.847396875" width="0.24" layer="1"/>
+<wire x1="40.947396875" y1="30.847396875" x2="40.947396875" y2="30.209475" width="0.24" layer="1"/>
+<wire x1="25.415759375" y1="48.9411125" x2="25.347396875" y2="49.009475" width="0.24" layer="1"/>
+<wire x1="26.21408125" y1="48.9411125" x2="25.415759375" y2="48.9411125" width="0.24" layer="1"/>
+<wire x1="28.347396875" y1="44.009475" x2="28.347396875" y2="46.807796875" width="0.24" layer="1"/>
+<wire x1="28.347396875" y1="46.807796875" x2="26.21408125" y2="48.9411125" width="0.24" layer="1"/>
+<wire x1="28.347396875" y1="44.009475" x2="29.590525" y2="44.009475" width="0.24" layer="1"/>
+<wire x1="31.647396875" y1="41.952603125" x2="31.647396875" y2="39.009475" width="0.24" layer="1"/>
+<wire x1="29.590525" y1="44.009475" x2="31.647396875" y2="41.952603125" width="0.24" layer="1"/>
+<wire x1="36.247396875" y1="34.409475" x2="36.247396875" y2="36.052603125" width="0.24" layer="1"/>
+<wire x1="33.290525" y1="39.009475" x2="31.647396875" y2="39.009475" width="0.24" layer="1"/>
+<wire x1="36.247396875" y1="36.052603125" x2="33.290525" y2="39.009475" width="0.24" layer="1"/>
+<wire x1="23.347396875" y1="54.009475" x2="24.790525" y2="54.009475" width="0.24" layer="1"/>
+<wire x1="25.9" y1="49.425353125" x2="25.415759375" y2="48.9411125" width="0.24" layer="1"/>
+<wire x1="24.790525" y1="54.009475" x2="25.9" y2="52.9" width="0.24" layer="1"/>
+<wire x1="25.9" y1="52.9" x2="25.9" y2="49.425353125" width="0.24" layer="1"/>
+<wire x1="22.8" y1="58.665" x2="21.915" y2="59.55" width="0.24" layer="1"/>
+<wire x1="23.347396875" y1="54.009475" x2="22.8" y2="54.556871875" width="0.24" layer="1"/>
+<wire x1="22.8" y1="58.665" x2="22.8" y2="54.556871875" width="0.24" layer="1"/>
+<wire x1="20.915" y1="68.55" x2="21.915" y2="67.55" width="0.24" layer="1"/>
+<wire x1="21.915" y1="67.55" x2="21.915" y2="59.55" width="0.24" layer="1"/>
+<wire x1="20.915" y1="68.55" x2="22.2" y2="69.835" width="0.24" layer="1"/>
+<wire x1="22.2" y1="75.765" x2="21.315" y2="76.65" width="0.24" layer="1"/>
+<wire x1="22.2" y1="69.835" x2="22.2" y2="75.765" width="0.24" layer="1"/>
+<wire x1="21.315" y1="76.65" x2="23.6" y2="78.935" width="0.24" layer="1"/>
+<wire x1="23.6" y1="82.365" x2="22.615" y2="83.35" width="0.24" layer="1"/>
+<wire x1="23.6" y1="78.935" x2="23.6" y2="82.365" width="0.24" layer="1"/>
+<wire x1="22.615" y1="83.35" x2="26.3" y2="87.035" width="0.24" layer="1"/>
+<wire x1="26.3" y1="89.165" x2="25.465" y2="90" width="0.24" layer="1"/>
+<wire x1="25.0325" y1="90.4325" x2="24.915" y2="90.55" width="0.24" layer="1"/>
+<wire x1="26.3" y1="87.035" x2="26.3" y2="89.165" width="0.24" layer="1"/>
+<wire x1="24.915" y1="90.55" x2="25.415" y2="90.55" width="0.24" layer="1"/>
+<wire x1="28.8" y1="94.665" x2="27.915" y2="95.55" width="0.24" layer="1"/>
+<wire x1="28.8" y1="93.935" x2="28.8" y2="94.665" width="0.24" layer="1"/>
+<wire x1="25.415" y1="90.55" x2="28.8" y2="93.935" width="0.24" layer="1"/>
+<wire x1="27.915" y1="95.55" x2="32.9338125" y2="100.5688125" width="0.24" layer="1"/>
+<wire x1="32.9338125" y1="100.5688125" x2="32.9338125" y2="101.482584375" width="0.24" layer="1"/>
+<wire x1="32.9338125" y1="101.482584375" x2="37.9338125" y2="106.482584375" width="0.24" layer="1"/>
+<wire x1="37.9338125" y1="106.482584375" x2="37.9338125" y2="107.482584375" width="0.24" layer="1"/>
+<wire x1="37.9338125" y1="107.482584375" x2="40.682584375" y2="107.482584375" width="0.24" layer="1"/>
+<wire x1="45.009475" y1="111.809475" x2="45.009475" y2="112.6526" width="0.24" layer="1"/>
+<wire x1="40.682584375" y1="107.482584375" x2="45.009475" y2="111.809475" width="0.24" layer="1"/>
+<wire x1="45.009475" y1="112.6526" x2="45.362075" y2="112.3" width="0.24" layer="1"/>
+<wire x1="51.55" y1="114.95" x2="51.55" y2="115.085" width="0.24" layer="1"/>
+<wire x1="45.362075" y1="112.3" x2="48.9" y2="112.3" width="0.24" layer="1"/>
+<wire x1="48.9" y1="112.3" x2="51.55" y2="114.95" width="0.24" layer="1"/>
+<wire x1="51.55" y1="115.085" x2="51.55" y2="114.15" width="0.24" layer="1"/>
+<wire x1="54.12" y1="111.58" x2="54.3" y2="111.58" width="0.24" layer="1"/>
+<wire x1="54.3" y1="111.58" x2="65.54" y2="111.58" width="0.24" layer="1"/>
+<wire x1="51.55" y1="114.15" x2="54.12" y2="111.58" width="0.24" layer="1"/>
+<wire x1="54.535" y1="25" x2="53.45" y2="23.915" width="0.24" layer="1"/>
+<wire x1="59.45" y1="23.05" x2="57.5" y2="25" width="0.24" layer="1"/>
+<wire x1="57.5" y1="25" x2="54.535" y2="25" width="0.24" layer="1"/>
+<wire x1="53.45" y1="23.915" x2="53.45" y2="25.15" width="0.24" layer="1"/>
+<wire x1="45.96476875" y1="26.515" x2="45.95" y2="26.515" width="0.24" layer="1"/>
+<wire x1="46.58716875" y1="27.1374" x2="45.96476875" y2="26.515" width="0.24" layer="1"/>
+<wire x1="51.4626" y1="27.1374" x2="46.58716875" y2="27.1374" width="0.24" layer="1"/>
+<wire x1="53.45" y1="25.15" x2="51.4626" y2="27.1374" width="0.24" layer="1"/>
+<wire x1="35.16" y1="106.24" x2="38.8" y2="102.6" width="0.16" layer="16"/>
+<wire x1="38.8" y1="102.6" x2="40.6" y2="102.6" width="0.16" layer="16"/>
+<wire x1="40.6" y1="102.6" x2="49.58" y2="111.58" width="0.16" layer="16"/>
+<wire x1="49.58" y1="111.58" x2="54.3" y2="111.58" width="0.16" layer="16"/>
+<via x="54.3" y="111.58" extent="1-16" drill="0.35"/>
+<wire x1="28" y1="63.73" x2="40.89" y2="63.73" width="0.16" layer="16"/>
+<wire x1="40.89" y1="63.73" x2="41.49" y2="63.13" width="0.16" layer="16"/>
+<wire x1="10" y1="71.35" x2="25.46" y2="71.35" width="0.24" layer="16"/>
+<wire x1="25.46" y1="71.35" x2="27.955" y2="68.855" width="0.24" layer="16"/>
+<wire x1="27.955" y1="68.855" x2="28" y2="68.81" width="0.24" layer="16"/>
+<wire x1="28" y1="68.81" x2="27.74" y2="68.55" width="0.24" layer="1"/>
+<wire x1="27.74" y1="68.55" x2="20.915" y2="68.55" width="0.24" layer="1"/>
+<wire x1="28" y1="68.81" x2="28" y2="71.35" width="0.24" layer="16"/>
+<wire x1="28" y1="71.35" x2="28" y2="73.89" width="0.24" layer="16"/>
+<wire x1="28" y1="66.27" x2="27.955" y2="66.315" width="0.24" layer="16"/>
+<wire x1="27.955" y1="66.315" x2="27.955" y2="68.855" width="0.24" layer="16"/>
+<wire x1="28" y1="63.73" x2="27.955" y2="63.775" width="0.24" layer="16"/>
+<wire x1="27.955" y1="63.775" x2="27.955" y2="66.315" width="0.24" layer="16"/>
+<wire x1="10" y1="56.11" x2="10" y2="58.65" width="0.24" layer="16"/>
+<wire x1="10" y1="58.65" x2="8.65" y2="58.65" width="0.24" layer="16"/>
+<wire x1="8.65" y1="58.65" x2="7.4" y2="59.9" width="0.24" layer="16"/>
+<wire x1="7.4" y1="59.9" x2="7.4" y2="70.2" width="0.24" layer="16"/>
+<wire x1="7.4" y1="70.2" x2="8.55" y2="71.35" width="0.24" layer="16"/>
+<wire x1="8.55" y1="71.35" x2="10" y2="71.35" width="0.24" layer="16"/>
+<wire x1="23.16" y1="94.04" x2="23.96" y2="94.04" width="0.24" layer="16"/>
+<wire x1="27.4" y1="90.6" x2="27.4" y2="90" width="0.24" layer="16"/>
+<via x="27.4" y="90" extent="1-16" drill="0.35"/>
+<wire x1="27.4" y1="90" x2="25.465" y2="90" width="0.24" layer="1"/>
+<wire x1="25.465" y1="90" x2="25.0325" y2="90.4325" width="0.24" layer="1"/>
+<wire x1="23.96" y1="94.04" x2="27.4" y2="90.6" width="0.24" layer="16"/>
 </signal>
 <signal name="CS">
 <contactref element="JP3" pad="1"/>
 <contactref element="LEFT_SIDE" pad="3"/>
-<wire x1="-48.26" y1="2.54" x2="28" y2="61.19" width="0" layer="19" extent="1-1"/>
+<wire x1="52.54" y1="29.74" x2="28" y2="61.19" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCK">
 <contactref element="JP3" pad="2"/>
 <contactref element="RIGHT_SIDE" pad="4"/>
-<wire x1="-45.72" y1="2.54" x2="10" y2="66.27" width="0" layer="19" extent="1-1"/>
+<wire x1="10" y1="66.27" x2="52.54" y2="32.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="JP3" pad="3"/>
 <contactref element="LEFT_SIDE" pad="2"/>
-<wire x1="-43.18" y1="2.54" x2="28" y2="58.65" width="0" layer="19" extent="1-1"/>
+<wire x1="52.54" y1="34.82" x2="28" y2="58.65" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MISO">
 <contactref element="JP3" pad="4"/>
 <contactref element="LEFT_SIDE" pad="1"/>
-<wire x1="-40.64" y1="2.54" x2="28" y2="56.11" width="0" layer="19" extent="1-1"/>
+<wire x1="28" y1="56.11" x2="52.54" y2="37.36" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="JP3" pad="5"/>
 <contactref element="RIGHT_SIDE" pad="3"/>
-<wire x1="-38.1" y1="2.54" x2="10" y2="68.81" width="0" layer="19" extent="1-1"/>
+<wire x1="10" y1="68.81" x2="52.54" y2="39.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DIN">
 <contactref element="RIGHT_SIDE" pad="5"/>
@@ -2092,13 +2160,26 @@ design rules under a new name.</description>
 <contactref element="5V_RELAY" pad="NO"/>
 <contactref element="H3" pad="B2,8"/>
 <contactref element="RIGHT_SIDE" pad="1"/>
-<wire x1="10" y1="73.89" x2="41.96" y2="71.81" width="0" layer="19" extent="1-1"/>
-<wire x1="-16.76" y1="4.16" x2="10" y2="73.89" width="0" layer="19" extent="1-1"/>
+<wire x1="10" y1="73.89" x2="10" y2="88.2" width="0.16" layer="1"/>
+<wire x1="23.2" y1="101.4" x2="23.2" y2="106.2" width="0.16" layer="1"/>
+<wire x1="10" y1="88.2" x2="23.2" y2="101.4" width="0.16" layer="1"/>
+<wire x1="23.16" y1="106.24" x2="23.2" y2="106.2" width="0.16" layer="1"/>
+<wire x1="10" y1="73.89" x2="14.81" y2="78.7" width="0.16" layer="16"/>
+<wire x1="34.07" y1="78.7" x2="40.96" y2="71.81" width="0.16" layer="16"/>
+<wire x1="14.81" y1="78.7" x2="34.07" y2="78.7" width="0.16" layer="16"/>
 </signal>
 <signal name="CMD">
 <contactref element="5V_RELAY" pad="COM"/>
 <contactref element="RIGHT_SIDE" pad="6"/>
-<wire x1="-30.96" y1="10.16" x2="10" y2="61.19" width="0" layer="19" extent="1-1"/>
+<wire x1="10" y1="61.19" x2="11.09" y2="61.19" width="0.24" layer="1"/>
+<wire x1="13.8" y1="86.9" x2="14.7" y2="87.8" width="0.24" layer="1"/>
+<via x="14.7" y="87.8" extent="1-16" drill="0.35"/>
+<wire x1="14.7" y1="87.8" x2="29" y2="87.8" width="0.24" layer="16"/>
+<wire x1="29" y1="87.8" x2="29.6" y2="88.4" width="0.24" layer="16"/>
+<wire x1="29.6" y1="88.4" x2="29.6" y2="91.6" width="0.24" layer="16"/>
+<wire x1="29.6" y1="91.6" x2="29.16" y2="92.04" width="0.24" layer="16"/>
+<wire x1="11.09" y1="61.19" x2="13.8" y2="63.9" width="0.24" layer="1"/>
+<wire x1="13.8" y1="63.9" x2="13.8" y2="86.9" width="0.24" layer="1"/>
 </signal>
 <signal name="+5V">
 <contactref element="5V_RELAY" pad="A1"/>
@@ -2123,132 +2204,292 @@ design rules under a new name.</description>
 <contactref element="D19" pad="4"/>
 <contactref element="D20" pad="4"/>
 <contactref element="PCB_CONNECTOR" pad="3"/>
-<wire x1="50.45" y1="116.915" x2="65.54" y2="116.66" width="0" layer="19" extent="1-1"/>
-<wire x1="43.45" y1="113.915" x2="50.45" y2="116.915" width="0" layer="19" extent="1-1"/>
-<wire x1="38.035909375" y1="107.741903125" x2="43.45" y2="113.915" width="0" layer="19" extent="1-1"/>
-<wire x1="33.0674125" y1="102.0188125" x2="38.035909375" y2="107.741903125" width="0" layer="19" extent="1-1"/>
-<wire x1="27.915" y1="95.55" x2="33.0674125" y2="102.0188125" width="0" layer="19" extent="1-1"/>
-<wire x1="24.915" y1="90.55" x2="27.915" y2="95.55" width="0" layer="19" extent="1-1"/>
-<wire x1="22.915" y1="83.55" x2="24.915" y2="90.55" width="0" layer="19" extent="1-1"/>
-<wire x1="20.915" y1="76.55" x2="22.915" y2="83.55" width="0" layer="19" extent="1-1"/>
-<wire x1="20.915" y1="68.55" x2="20.915" y2="76.55" width="0" layer="19" extent="1-1"/>
-<wire x1="21.915" y1="59.55" x2="20.915" y2="68.55" width="0" layer="19" extent="1-1"/>
-<wire x1="23.5174125" y1="53.9338125" x2="21.915" y2="59.55" width="0" layer="19" extent="1-1"/>
-<wire x1="25.25809375" y1="49.035909375" x2="23.5174125" y2="53.9338125" width="0" layer="19" extent="1-1"/>
-<wire x1="28.25809375" y1="44.035909375" x2="25.25809375" y2="49.035909375" width="0" layer="19" extent="1-1"/>
-<wire x1="31.55" y1="37.085" x2="28.25809375" y2="44.035909375" width="0" layer="19" extent="1-1"/>
-<wire x1="35.45" y1="34.915" x2="31.55" y2="37.085" width="0" layer="19" extent="1-1"/>
-<wire x1="41.55" y1="28.085" x2="35.45" y2="34.915" width="0" layer="19" extent="1-1"/>
-<wire x1="45.45" y1="26.915" x2="41.55" y2="28.085" width="0" layer="19" extent="1-1"/>
-<wire x1="54.55" y1="22.085" x2="45.45" y2="26.915" width="0" layer="19" extent="1-1"/>
-<wire x1="60.55" y1="20.085" x2="54.55" y2="22.085" width="0" layer="19" extent="1-1"/>
-<wire x1="66.45" y1="20.915" x2="60.55" y2="20.085" width="0" layer="19" extent="1-1"/>
-<wire x1="-28.96" y1="16.16" x2="25.25809375" y2="49.035909375" width="0" layer="19" extent="1-1"/>
+<wire x1="60.55" y1="20.085" x2="65.62" y2="20.085" width="0.24" layer="1"/>
+<wire x1="65.62" y1="20.085" x2="66.45" y2="20.915" width="0.24" layer="1"/>
+<wire x1="54.55" y1="22.085" x2="54.55" y2="22.55" width="0.24" layer="1"/>
+<wire x1="54.55" y1="22.55" x2="54.6" y2="22.6" width="0.24" layer="1"/>
+<wire x1="54.6" y1="22.6" x2="56.9" y2="22.6" width="0.24" layer="1"/>
+<wire x1="60.53523125" y1="20.085" x2="60.55" y2="20.085" width="0.24" layer="1"/>
+<wire x1="58.7926" y1="20.7074" x2="59.91283125" y2="20.7074" width="0.24" layer="1"/>
+<wire x1="59.91283125" y1="20.7074" x2="60.53523125" y2="20.085" width="0.24" layer="1"/>
+<wire x1="56.9" y1="22.6" x2="58.7926" y2="20.7074" width="0.24" layer="1"/>
+<wire x1="54.55" y1="22.085" x2="54.55" y2="21.55" width="0.24" layer="1"/>
+<wire x1="53.9" y1="20.9" x2="54.55" y2="21.55" width="0.24" layer="1"/>
+<wire x1="47.05" y1="24.685" x2="50.835" y2="20.9" width="0.24" layer="1"/>
+<wire x1="50.835" y1="20.9" x2="53.9" y2="20.9" width="0.24" layer="1"/>
+<wire x1="47.05" y1="24.685" x2="47.03523125" y2="24.685" width="0.24" layer="1"/>
+<wire x1="47.03523125" y1="24.685" x2="46.41283125" y2="24.0626" width="0.24" layer="1"/>
+<wire x1="46.41283125" y1="24.0626" x2="44.380521875" y2="24.0626" width="0.24" layer="1"/>
+<wire x1="44.380521875" y1="24.0626" x2="40.2526" y2="28.190521875" width="0.24" layer="1"/>
+<wire x1="40.2526" y1="28.190521875" x2="38.609478125" y2="28.190521875" width="0.24" layer="1"/>
+<wire x1="35.5526" y1="31.2474" x2="35.5526" y2="32.390521875" width="0.24" layer="1"/>
+<wire x1="38.609478125" y1="28.190521875" x2="35.5526" y2="31.2474" width="0.24" layer="1"/>
+<wire x1="35.5526" y1="32.390521875" x2="34.109478125" y2="32.390521875" width="0.24" layer="1"/>
+<wire x1="30.9526" y1="35.5474" x2="30.9526" y2="36.990521875" width="0.24" layer="1"/>
+<wire x1="34.109478125" y1="32.390521875" x2="30.9526" y2="35.5474" width="0.24" layer="1"/>
+<wire x1="30.9526" y1="36.990521875" x2="30.884234375" y2="37.0588875" width="0.24" layer="1"/>
+<wire x1="30.884234375" y1="37.0588875" x2="30.08591875" y2="37.0588875" width="0.24" layer="1"/>
+<wire x1="30.08591875" y1="37.0588875" x2="27.6526" y2="39.49220625" width="0.24" layer="1"/>
+<wire x1="27.6526" y1="39.49220625" x2="27.6526" y2="41.990521875" width="0.24" layer="1"/>
+<wire x1="27.6526" y1="41.990521875" x2="26.809478125" y2="41.990521875" width="0.24" layer="1"/>
+<wire x1="24.6526" y1="44.1474" x2="24.6526" y2="46.990521875" width="0.24" layer="1"/>
+<wire x1="26.809478125" y1="41.990521875" x2="24.6526" y2="44.1474" width="0.24" layer="1"/>
+<wire x1="24.6526" y1="46.990521875" x2="24.584234375" y2="47.0588875" width="0.24" layer="1"/>
+<wire x1="24.584234375" y1="47.0588875" x2="23.78591875" y2="47.0588875" width="0.24" layer="1"/>
+<wire x1="22.14480625" y1="48.7" x2="22.1" y2="48.7" width="0.24" layer="1"/>
+<wire x1="23.78591875" y1="47.0588875" x2="22.14480625" y2="48.7" width="0.24" layer="1"/>
+<wire x1="22.1" y1="48.7" x2="22.1" y2="51.437921875" width="0.24" layer="1"/>
+<wire x1="22.1" y1="51.437921875" x2="22.6526" y2="51.990521875" width="0.24" layer="1"/>
+<wire x1="50.45" y1="116.915" x2="51.235" y2="117.7" width="0.24" layer="1"/>
+<wire x1="55.04" y1="116.66" x2="65.54" y2="116.66" width="0.24" layer="1"/>
+<wire x1="51.235" y1="117.7" x2="54" y2="117.7" width="0.24" layer="1"/>
+<wire x1="54" y1="117.7" x2="55.04" y2="116.66" width="0.24" layer="1"/>
+<wire x1="22.6526" y1="51.990521875" x2="22.162078125" y2="51.5" width="0.24" layer="1"/>
+<wire x1="22.162078125" y1="51.5" x2="20.9" y2="51.5" width="0.24" layer="1"/>
+<wire x1="20.9" y1="51.5" x2="20.085" y2="52.315" width="0.24" layer="1"/>
+<wire x1="20.085" y1="52.315" x2="20.085" y2="58.45" width="0.24" layer="1"/>
+<wire x1="20.085" y1="58.45" x2="18.7" y2="59.835" width="0.24" layer="1"/>
+<wire x1="18.7" y1="67.065" x2="19.085" y2="67.45" width="0.24" layer="1"/>
+<wire x1="18.7" y1="59.835" x2="18.7" y2="67.065" width="0.24" layer="1"/>
+<wire x1="19.085" y1="67.45" x2="18.75" y2="67.45" width="0.24" layer="1"/>
+<wire x1="18.75" y1="67.45" x2="18.2" y2="68" width="0.24" layer="1"/>
+<wire x1="18.2" y1="68" x2="18.2" y2="74.265" width="0.24" layer="1"/>
+<wire x1="18.2" y1="74.265" x2="19.485" y2="75.55" width="0.24" layer="1"/>
+<wire x1="19.485" y1="75.55" x2="18.4" y2="76.635" width="0.24" layer="1"/>
+<wire x1="18.4" y1="79.865" x2="20.785" y2="82.25" width="0.24" layer="1"/>
+<wire x1="18.4" y1="76.635" x2="18.4" y2="79.865" width="0.24" layer="1"/>
+<wire x1="20.785" y1="82.25" x2="20" y2="83.035" width="0.24" layer="1"/>
+<wire x1="21.95" y1="89.45" x2="23.085" y2="89.45" width="0.24" layer="1"/>
+<wire x1="20" y1="83.035" x2="20" y2="87.5" width="0.24" layer="1"/>
+<wire x1="20" y1="87.5" x2="21.95" y2="89.45" width="0.24" layer="1"/>
+<wire x1="23.085" y1="89.45" x2="22.4" y2="90.135" width="0.24" layer="1"/>
+<wire x1="22.4" y1="90.135" x2="22.4" y2="91.6" width="0.24" layer="1"/>
+<wire x1="22.4" y1="91.6" x2="23.1" y2="92.3" width="0.24" layer="1"/>
+<wire x1="23.935" y1="92.3" x2="26.085" y2="94.45" width="0.24" layer="1"/>
+<wire x1="23.1" y1="92.3" x2="23.935" y2="92.3" width="0.24" layer="1"/>
+<wire x1="26.085" y1="94.45" x2="25.3" y2="95.235" width="0.24" layer="1"/>
+<wire x1="25.3" y1="95.235" x2="25.3" y2="97.2" width="0.24" layer="1"/>
+<wire x1="25.3" y1="97.2" x2="30.6174125" y2="102.5174125" width="0.24" layer="1"/>
+<wire x1="30.6174125" y1="102.5174125" x2="31.066184375" y2="102.5174125" width="0.24" layer="1"/>
+<wire x1="35.16" y1="94.04" x2="48.32" y2="107.2" width="0.24" layer="16"/>
+<wire x1="56.08" y1="107.2" x2="65.54" y2="116.66" width="0.24" layer="16"/>
+<wire x1="48.32" y1="107.2" x2="56.08" y2="107.2" width="0.24" layer="16"/>
+<wire x1="42.990521875" y1="113.347396875" x2="42.990521875" y2="115.390521875" width="0.24" layer="1"/>
+<wire x1="44.515" y1="116.915" x2="50.45" y2="116.915" width="0.24" layer="1"/>
+<wire x1="42.990521875" y1="115.390521875" x2="44.515" y2="116.915" width="0.24" layer="1"/>
+<wire x1="36.066184375" y1="108.5174125" x2="36.066184375" y2="109.266184375" width="0.24" layer="1"/>
+<wire x1="40.147396875" y1="113.347396875" x2="42.990521875" y2="113.347396875" width="0.24" layer="1"/>
+<wire x1="36.066184375" y1="109.266184375" x2="40.147396875" y2="113.347396875" width="0.24" layer="1"/>
+<wire x1="31.066184375" y1="102.5174125" x2="31.066184375" y2="105.166184375" width="0.24" layer="1"/>
+<wire x1="34.4174125" y1="108.5174125" x2="36.066184375" y2="108.5174125" width="0.24" layer="1"/>
+<wire x1="31.066184375" y1="105.166184375" x2="34.4174125" y2="108.5174125" width="0.24" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R1" pad="2"/>
 <contactref element="D1" pad="3"/>
-<wire x1="25.474075" y1="26.095921875" x2="67.55" y2="20.915" width="0" layer="19" extent="1-1"/>
+<wire x1="25.474075" y1="26.095921875" x2="28.669996875" y2="22.9" width="0.16" layer="16"/>
+<wire x1="64.1" y1="22.9" x2="64.3" y2="22.7" width="0.16" layer="16"/>
+<via x="64.3" y="22.7" extent="1-16" drill="0.35"/>
+<wire x1="64.3" y1="22.7" x2="65.765" y2="22.7" width="0.16" layer="1"/>
+<wire x1="65.765" y1="22.7" x2="67.55" y2="20.915" width="0.16" layer="1"/>
+<wire x1="28.669996875" y1="22.9" x2="64.1" y2="22.9" width="0.16" layer="16"/>
 </signal>
 <signal name="DO">
 <contactref element="D20" pad="1"/>
 <contactref element="PCB_CONNECTOR" pad="2"/>
-<wire x1="50.45" y1="115.085" x2="65.54" y2="114.12" width="0" layer="19" extent="1-1"/>
+<wire x1="50.45" y1="115.085" x2="51.265" y2="115.9" width="0.16" layer="1"/>
+<wire x1="56.08" y1="114.12" x2="65.54" y2="114.12" width="0.16" layer="1"/>
+<wire x1="51.265" y1="115.9" x2="54.3" y2="115.9" width="0.16" layer="1"/>
+<wire x1="54.3" y1="115.9" x2="56.08" y2="114.12" width="0.16" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="D1" pad="1"/>
 <contactref element="D2" pad="3"/>
-<wire x1="59.45" y1="20.085" x2="66.45" y2="19.085" width="0" layer="19" extent="1-1"/>
+<wire x1="59.45" y1="19.95" x2="59.45" y2="20.085" width="0.24" layer="1"/>
+<wire x1="66.45" y1="19.085" x2="60.45" y2="19.085" width="0.16" layer="1"/>
+<wire x1="60.45" y1="19.085" x2="59.45" y2="20.085" width="0.16" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="D2" pad="1"/>
 <contactref element="D3" pad="3"/>
-<wire x1="53.45" y1="22.085" x2="60.55" y2="21.915" width="0" layer="19" extent="1-1"/>
+<wire x1="60.55" y1="21.915" x2="60.53523125" y2="21.915" width="0.24" layer="1"/>
+<wire x1="60.55" y1="21.915" x2="59.6948" y2="21.0598" width="0.16" layer="1"/>
+<wire x1="58.938575" y1="21.0598" x2="57.045975" y2="22.9524" width="0.16" layer="1"/>
+<wire x1="57.045975" y1="22.9524" x2="54.3887375" y2="22.9524" width="0.16" layer="1"/>
+<wire x1="53.5213375" y1="22.085" x2="53.45" y2="22.085" width="0.16" layer="1"/>
+<wire x1="54.3887375" y1="22.9524" x2="53.5213375" y2="22.085" width="0.16" layer="1"/>
+<wire x1="59.6948" y1="21.0598" x2="58.938575" y2="21.0598" width="0.16" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="D3" pad="1"/>
 <contactref element="D4" pad="3"/>
-<wire x1="46.55" y1="26.915" x2="54.55" y2="23.915" width="0" layer="19" extent="1-1"/>
+<wire x1="46.6037375" y1="25.2674" x2="47.4962625" y2="25.2674" width="0.16" layer="1"/>
+<wire x1="47.4962625" y1="25.2674" x2="47.6324" y2="25.1312625" width="0.16" layer="1"/>
+<wire x1="47.6324" y1="25.1312625" x2="47.6324" y2="24.600975" width="0.16" layer="1"/>
+<wire x1="45.95" y1="24.685" x2="46.0213375" y2="24.685" width="0.16" layer="1"/>
+<wire x1="46.0213375" y1="24.685" x2="46.6037375" y2="25.2674" width="0.16" layer="1"/>
+<wire x1="47.6324" y1="24.600975" x2="49.933375" y2="22.3" width="0.16" layer="1"/>
+<wire x1="49.933375" y1="22.3" x2="52.6363375" y2="22.3" width="0.16" layer="1"/>
+<wire x1="54.55" y1="23.55546875" x2="54.55" y2="23.915" width="0.16" layer="1"/>
+<wire x1="54.09453125" y1="23.1" x2="54.55" y2="23.55546875" width="0.16" layer="1"/>
+<wire x1="53.4363375" y1="23.1" x2="54.09453125" y2="23.1" width="0.16" layer="1"/>
+<wire x1="52.6363375" y1="22.3" x2="53.4363375" y2="23.1" width="0.16" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="D4" pad="1"/>
 <contactref element="D5" pad="3"/>
-<wire x1="40.45" y1="28.085" x2="45.45" y2="25.085" width="0" layer="19" extent="1-1"/>
+<wire x1="47.05" y1="26.515" x2="46.335" y2="25.8" width="0.16" layer="1"/>
+<wire x1="46.335" y1="25.8" x2="44.7" y2="25.8" width="0.16" layer="1"/>
+<wire x1="44.7" y1="25.8" x2="44.6" y2="25.8" width="0.16" layer="1"/>
+<wire x1="39.655190625" y1="28.923515625" x2="39.545534375" y2="29.033171875" width="0.16" layer="1"/>
+<wire x1="40.3951125" y1="28.923515625" x2="39.655190625" y2="28.923515625" width="0.16" layer="1"/>
+<wire x1="42.418628125" y1="26.9" x2="42.3593125" y2="26.959315625" width="0.16" layer="1"/>
+<wire x1="42.3593125" y1="26.959315625" x2="40.3951125" y2="28.923515625" width="0.16" layer="1"/>
+<wire x1="42.418628125" y1="26.9" x2="43.518628125" y2="25.8" width="0.16" layer="1"/>
+<wire x1="43.518628125" y1="25.8" x2="44.6" y2="25.8" width="0.16" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="D5" pad="1"/>
 <contactref element="D6" pad="3"/>
-<wire x1="36.55" y1="34.915" x2="41.55" y2="29.915" width="0" layer="19" extent="1-1"/>
+<wire x1="41.6544625" y1="29.366825" x2="41.52355625" y2="29.23591875" width="0.16" layer="1"/>
+<wire x1="34.955190625" y1="33.123515625" x2="34.845534375" y2="33.233171875" width="0.16" layer="1"/>
+<wire x1="40.243275" y1="29.23591875" x2="36.355678125" y2="33.123515625" width="0.16" layer="1"/>
+<wire x1="36.355678125" y1="33.123515625" x2="34.955190625" y2="33.123515625" width="0.16" layer="1"/>
+<wire x1="41.52355625" y1="29.23591875" x2="40.243275" y2="29.23591875" width="0.16" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="D9" pad="1"/>
 <contactref element="D10" pad="3"/>
-<wire x1="23.9640875" y1="47.741903125" x2="24.0674125" y2="52.981184375" width="0" layer="19" extent="1-1"/>
+<wire x1="26.0544625" y1="48.166825" x2="25.94480625" y2="48.27648125" width="0.16" layer="1"/>
+<wire x1="25.94480625" y1="48.27648125" x2="25.204884375" y2="48.27648125" width="0.16" layer="1"/>
+<wire x1="25.204884375" y1="48.27648125" x2="24" y2="49.481365625" width="0.16" layer="1"/>
+<wire x1="24" y1="51.518628125" x2="22.68545625" y2="52.833171875" width="0.16" layer="1"/>
+<wire x1="22.68545625" y1="52.833171875" x2="21.945534375" y2="52.833171875" width="0.16" layer="1"/>
+<wire x1="24" y1="49.481365625" x2="24" y2="51.518628125" width="0.16" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="D9" pad="3"/>
 <contactref element="D8" pad="1"/>
-<wire x1="26.9640875" y1="42.741903125" x2="26.035909375" y2="48.25809375" width="0" layer="19" extent="1-1"/>
+<wire x1="29.0544625" y1="43.166825" x2="28.94480625" y2="43.27648125" width="0.16" layer="1"/>
+<wire x1="28.94480625" y1="43.27648125" x2="28.204884375" y2="43.27648125" width="0.16" layer="1"/>
+<wire x1="28.204884375" y1="43.27648125" x2="25.7" y2="45.781365625" width="0.16" layer="1"/>
+<wire x1="25.7" y1="46.818628125" x2="24.68545625" y2="47.833171875" width="0.16" layer="1"/>
+<wire x1="24.68545625" y1="47.833171875" x2="23.945534375" y2="47.833171875" width="0.16" layer="1"/>
+<wire x1="25.7" y1="45.781365625" x2="25.7" y2="46.818628125" width="0.16" layer="1"/>
 </signal>
 <signal name="N$11">
 <contactref element="D7" pad="1"/>
 <contactref element="D8" pad="3"/>
-<wire x1="31.55" y1="38.915" x2="29.035909375" y2="43.25809375" width="0" layer="19" extent="1-1"/>
+<wire x1="32.3544625" y1="38.166825" x2="31.133175" y2="38.166825" width="0.16" layer="1"/>
+<wire x1="29" y1="41.518628125" x2="27.68545625" y2="42.833171875" width="0.16" layer="1"/>
+<wire x1="27.68545625" y1="42.833171875" x2="26.945534375" y2="42.833171875" width="0.16" layer="1"/>
+<wire x1="31.133175" y1="38.166825" x2="29" y2="40.3" width="0.16" layer="1"/>
+<wire x1="29" y1="40.3" x2="29" y2="41.518628125" width="0.16" layer="1"/>
 </signal>
 <signal name="N$12">
 <contactref element="D6" pad="1"/>
 <contactref element="D7" pad="3"/>
-<wire x1="30.45" y1="37.085" x2="35.45" y2="33.085" width="0" layer="19" extent="1-1"/>
+<wire x1="36.9544625" y1="33.566825" x2="35.533175" y2="33.566825" width="0.16" layer="1"/>
+<wire x1="31.266828125" y1="37.833171875" x2="30.245534375" y2="37.833171875" width="0.16" layer="1"/>
+<wire x1="35.533175" y1="33.566825" x2="31.266828125" y2="37.833171875" width="0.16" layer="1"/>
 </signal>
 <signal name="N$13">
 <contactref element="D14" pad="1"/>
 <contactref element="D15" pad="3"/>
-<wire x1="21.085" y1="83.55" x2="24.915" y2="89.45" width="0" layer="19" extent="1-1"/>
+<wire x1="22.615" y1="82.25" x2="21.7" y2="83.165" width="0.16" layer="1"/>
+<wire x1="23.085" y1="90.4786625" x2="23.085" y2="90.55" width="0.16" layer="1"/>
+<wire x1="23.6674" y1="89.8962625" x2="23.085" y2="90.4786625" width="0.16" layer="1"/>
+<wire x1="23.6674" y1="87.7674" x2="23.6674" y2="89.8962625" width="0.16" layer="1"/>
+<wire x1="21.7" y1="83.165" x2="21.7" y2="85.8" width="0.16" layer="1"/>
+<wire x1="21.7" y1="85.8" x2="23.6674" y2="87.7674" width="0.16" layer="1"/>
 </signal>
 <signal name="N$14">
 <contactref element="D13" pad="1"/>
 <contactref element="D14" pad="3"/>
-<wire x1="19.085" y1="76.55" x2="22.915" y2="82.45" width="0" layer="19" extent="1-1"/>
+<wire x1="21.315" y1="75.55" x2="20.6" y2="76.265" width="0.16" layer="1"/>
+<wire x1="20.6" y1="80.7" x2="21.6" y2="81.7" width="0.16" layer="1"/>
+<wire x1="21.6" y1="81.7" x2="21.6" y2="82.535" width="0.16" layer="1"/>
+<wire x1="21.6" y1="82.535" x2="20.785" y2="83.35" width="0.16" layer="1"/>
+<wire x1="20.6" y1="76.265" x2="20.6" y2="80.7" width="0.16" layer="1"/>
 </signal>
 <signal name="N$15">
 <contactref element="D12" pad="1"/>
 <contactref element="D13" pad="3"/>
-<wire x1="19.085" y1="68.55" x2="20.915" y2="75.45" width="0" layer="19" extent="1-1"/>
+<wire x1="20.915" y1="67.45" x2="20.2" y2="68.165" width="0.16" layer="1"/>
+<wire x1="20.2" y1="75.935" x2="19.485" y2="76.65" width="0.16" layer="1"/>
+<wire x1="20.2" y1="68.165" x2="20.2" y2="75.935" width="0.16" layer="1"/>
 </signal>
 <signal name="N$16">
 <contactref element="D12" pad="3"/>
 <contactref element="D11" pad="1"/>
-<wire x1="20.085" y1="59.55" x2="20.915" y2="67.45" width="0" layer="19" extent="1-1"/>
+<wire x1="21.915" y1="58.45" x2="20.8" y2="59.565" width="0.16" layer="1"/>
+<wire x1="19.085" y1="68.4786625" x2="19.085" y2="68.55" width="0.16" layer="1"/>
+<wire x1="19.6674" y1="67.8962625" x2="19.085" y2="68.4786625" width="0.16" layer="1"/>
+<wire x1="19.6674" y1="65.0326" x2="19.6674" y2="67.8962625" width="0.16" layer="1"/>
+<wire x1="20.8" y1="59.565" x2="20.8" y2="63.9" width="0.16" layer="1"/>
+<wire x1="20.8" y1="63.9" x2="19.6674" y2="65.0326" width="0.16" layer="1"/>
 </signal>
 <signal name="N$17">
 <contactref element="D10" pad="1"/>
 <contactref element="D11" pad="3"/>
-<wire x1="21.932584375" y1="53.0188125" x2="21.915" y2="58.45" width="0" layer="19" extent="1-1"/>
+<wire x1="24.0544625" y1="53.166825" x2="23.94480625" y2="53.27648125" width="0.16" layer="1"/>
+<wire x1="23.94480625" y1="53.27648125" x2="23.204884375" y2="53.27648125" width="0.16" layer="1"/>
+<wire x1="23.204884375" y1="53.27648125" x2="21.5" y2="54.981365625" width="0.16" layer="1"/>
+<wire x1="20.085" y1="59.4786625" x2="20.085" y2="59.55" width="0.16" layer="1"/>
+<wire x1="20.6674" y1="57.8326" x2="20.6674" y2="58.8962625" width="0.16" layer="1"/>
+<wire x1="20.6674" y1="58.8962625" x2="20.085" y2="59.4786625" width="0.16" layer="1"/>
+<wire x1="21.5" y1="54.981365625" x2="21.5" y2="57" width="0.16" layer="1"/>
+<wire x1="21.5" y1="57" x2="20.6674" y2="57.8326" width="0.16" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="D19" pad="3"/>
 <contactref element="D18" pad="1"/>
-<wire x1="36.741903125" y1="109.035909375" x2="44.55" y2="113.915" width="0" layer="19" extent="1-1"/>
+<wire x1="36.981184375" y1="106.932584375" x2="37.206309375" y2="107.157709375" width="0.16" layer="1"/>
+<wire x1="37.206309375" y1="107.157709375" x2="37.206309375" y2="107.713996875" width="0.16" layer="1"/>
+<wire x1="37.206309375" y1="107.713996875" x2="42.0923125" y2="112.6" width="0.16" layer="1"/>
+<wire x1="42.0923125" y1="112.6" x2="43.3" y2="112.6" width="0.16" layer="1"/>
+<wire x1="43.3" y1="112.6" x2="43.833171875" y2="113.133171875" width="0.16" layer="1"/>
+<wire x1="43.833171875" y1="113.133171875" x2="43.833171875" y2="114.0544625" width="0.16" layer="1"/>
 </signal>
 <signal name="N$19">
 <contactref element="D18" pad="3"/>
 <contactref element="D17" pad="1"/>
-<wire x1="31.482584375" y1="102.9338125" x2="37.25809375" y2="106.9640875" width="0" layer="19" extent="1-1"/>
+<wire x1="31.981184375" y1="100.932584375" x2="31.981184375" y2="101.981184375" width="0.16" layer="1"/>
+<wire x1="31.981184375" y1="101.981184375" x2="33.9376" y2="103.9376" width="0.16" layer="1"/>
+<wire x1="36.7936875" y1="108.8422875" x2="37.0188125" y2="109.0674125" width="0.16" layer="1"/>
+<wire x1="36.7936875" y1="108.286003125" x2="36.7936875" y2="108.8422875" width="0.16" layer="1"/>
+<wire x1="36.29759375" y1="107.789909375" x2="36.7936875" y2="108.286003125" width="0.16" layer="1"/>
+<wire x1="33.9376" y1="106.7463375" x2="34.981171875" y2="107.789909375" width="0.16" layer="1"/>
+<wire x1="34.981171875" y1="107.789909375" x2="36.29759375" y2="107.789909375" width="0.16" layer="1"/>
+<wire x1="33.9376" y1="103.9376" x2="33.9376" y2="106.7463375" width="0.16" layer="1"/>
 </signal>
 <signal name="N$20">
 <contactref element="D17" pad="3"/>
 <contactref element="D16" pad="1"/>
-<wire x1="26.085" y1="95.55" x2="32.5174125" y2="101.066184375" width="0" layer="19" extent="1-1"/>
+<wire x1="27.915" y1="94.45" x2="27.915" y2="94.5213375" width="0.16" layer="1"/>
+<wire x1="27.915" y1="94.5213375" x2="27.3326" y2="95.1037375" width="0.16" layer="1"/>
+<wire x1="31.7936875" y1="102.8422875" x2="32.0188125" y2="103.0674125" width="0.16" layer="1"/>
+<wire x1="31.7936875" y1="102.286003125" x2="31.7936875" y2="102.8422875" width="0.16" layer="1"/>
+<wire x1="27.3326" y1="97.824915625" x2="31.7936875" y2="102.286003125" width="0.16" layer="1"/>
+<wire x1="27.3326" y1="95.1037375" x2="27.3326" y2="97.824915625" width="0.16" layer="1"/>
 </signal>
 <signal name="N$21">
 <contactref element="D15" pad="1"/>
 <contactref element="D16" pad="3"/>
-<wire x1="23.085" y1="90.55" x2="27.915" y2="94.45" width="0" layer="19" extent="1-1"/>
+<wire x1="24.915" y1="89.45" x2="24.3" y2="90.065" width="0.16" layer="1"/>
+<wire x1="26.6674" y1="94.0037375" x2="26.6674" y2="94.8962625" width="0.16" layer="1"/>
+<wire x1="26.085" y1="95.4786625" x2="26.085" y2="95.55" width="0.16" layer="1"/>
+<wire x1="24.3" y1="91.6363375" x2="26.6674" y2="94.0037375" width="0.16" layer="1"/>
+<wire x1="26.6674" y1="94.8962625" x2="26.085" y2="95.4786625" width="0.16" layer="1"/>
+<wire x1="24.3" y1="90.065" x2="24.3" y2="91.6363375" width="0.16" layer="1"/>
 </signal>
 <signal name="N$22">
 <contactref element="D20" pad="3"/>
 <contactref element="D19" pad="1"/>
-<wire x1="43.45" y1="112.085" x2="51.55" y2="116.915" width="0" layer="19" extent="1-1"/>
+<wire x1="44.166825" y1="111.945534375" x2="44.166825" y2="113.366825" width="0.16" layer="1"/>
+<wire x1="50.935" y1="116.3" x2="51.55" y2="116.915" width="0.16" layer="1"/>
+<wire x1="44.166825" y1="113.366825" x2="47.1" y2="116.3" width="0.16" layer="1"/>
+<wire x1="47.1" y1="116.3" x2="50.935" y2="116.3" width="0.16" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
