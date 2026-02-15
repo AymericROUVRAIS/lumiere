@@ -1,5 +1,3 @@
 # Eagle compilation files
-*
-!.epf
-!.brd
-!.sch
+*.job
+*#[1-9]
